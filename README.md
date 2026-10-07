@@ -1,6 +1,6 @@
-echoes-of-a-wanderer 🌌
+# echoes-of-a-wanderer 🌌
 
-«Notes to eternity, pages I never sent. ✉️»
+> Notes to eternity, pages I never sent. ✉️
 
 A private archive of thoughts, letters, memories, fragments, questions, dreams, and unfinished words collected across different seasons of life. 🍂📖
 
