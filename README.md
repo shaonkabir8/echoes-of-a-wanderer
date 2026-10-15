@@ -1,4 +1,4 @@
-<details open>
+<details close>
 <summary>🇬🇧 English</summary>
 
 <div align="center">
@@ -379,7 +379,7 @@ And if these words ever become nothing more than a quiet record of having lived,
 
 </details>
 
-<details>
+<details open > 
 <summary>🇧🇩 বাংলা</summary>
 
 <div align="center">
