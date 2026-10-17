@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="জীবনের বিভিন্ন ঋতুতে সংগ্রহ করা চিন্তা, চিঠি, স্মৃতি, খণ্ডচিত্র, প্রশ্ন, স্বপ্ন এবং অসমাপ্ত শব্দের একটি ব্যক্তিগত সংগ্রহ।" />
+<title>echoes-of-a-wanderer · এক মহাজাগতিক মুসাফির</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Hind+Siliguri:wght@300;400;500;600;700&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet" />
+
+<style>
+  /* ============================================================
+     VARIABLES
+     ============================================================ */
+  :root {
+    --bg-1: #0f0c29;
+    --bg-2: #24243e;
+    --bg-3: #302b63;
+    --bg-4: #191533;
+    --violet: #6d5acf;
+    --violet-md: #8b7bd8;
+    --violet-lt: #b8a6ff;
+    --ink: #eae6ff;
+    --muted: #a49dca;
+    --glass: rgba(255, 255, 255, 0.045);
+    --glass-hi: rgba(255, 255, 255, 0.075);
+    --stroke: rgba(184, 166, 255, 0.16);
+    --stroke-hi: rgba(184, 166, 255, 0.42);
+    --glow: rgba(109, 90, 207, 0.55);
+    --radius: 20px;
+    --max: 900px;
+  }
+
+  /* ============================================================
+     RESET
+     ============================================================ */
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Hind Siliguri", "Tiro Bangla", system-ui, sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.9;
+    color: var(--ink);
+    background: linear-gradient(-45deg, var(--bg-1), var(--bg-3), var(--bg-2), var(--bg-4));
+    background-size: 400% 400%;
+    animation: auroraBG 26s ease infinite;
+    overflow-x: hidden;
+    position: relative;
+    letter-spacing: 0.005em;
+  }
+
+  @keyframes auroraBG {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  ::selection {
+    background: var(--violet);
+    color: #fff;
+  }
+
+  /* ============================================================
+     STARFIELD + AURORA GLOWS
+     ============================================================ */
+  .stars,
+  .stars-2,
+  .stars-3 {
+    position: fixed;
+    inset: -50%;
+    pointer-events: none;
+    z-index: 0;
+    background-repeat: repeat;
+  }
+
+  .stars {
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.85), transparent),
+      radial-gradient(1.5px 1.5px at 130px 90px, rgba(184,166,255,.75), transparent),
+      radial-gradient(1.5px 1.5px at 60px 160px, rgba(255,255,255,.55), transparent),
+      radial-gradient(2px 2px at 180px 40px, rgba(139,123,216,.7), transparent);
+    background-size: 220px 220px;
+    animation: twinkle 6s ease-in-out infinite alternate, drift 120s linear infinite;
+  }
+
+  .stars-2 {
+    background-image:
+      radial-gradient(1px 1px at 80px 120px, rgba(255,255,255,.6), transparent),
+      radial-gradient(1.5px 1.5px at 40px 60px, rgba(184,166,255,.5), transparent),
+      radial-gradient(1px 1px at 200px 200px, rgba(255,255,255,.45), transparent);
+    background-size: 300px 300px;
+    animation: twinkle 9s ease-in-out infinite alternate-reverse, drift 200s linear infinite reverse;
+  }
+
+  .stars-3 {
+    background-image:
+      radial-gradient(1px 1px at 150px 50px, rgba(255,255,255,.35), transparent),
+      radial-gradient(1px 1px at 90px 230px, rgba(184,166,255,.3), transparent);
+    background-size: 400px 400px;
+    animation: twinkle 13s ease-in-out infinite alternate;
+  }
+
+  @keyframes twinkle {
+    0%   { opacity: .35; }
+    100% { opacity: .95; }
+  }
+
+  @keyframes drift {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(-220px, -220px, 0); }
+  }
+
+  .glow {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+    z-index: 0;
+    opacity: .55;
+  }
+
+  .glow-a {
+    width: 480px; height: 480px;
+    top: -140px; left: -120px;
+    background: radial-gradient(circle, rgba(109,90,207,.65), transparent 70%);
+    animation: floatGlow 18s ease-in-out infinite alternate;
+  }
+
+  .glow-b {
+    width: 520px; height: 520px;
+    bottom: -180px; right: -160px;
+    background: radial-gradient(circle, rgba(139,123,216,.5), transparent 70%);
+    animation: floatGlow 24s ease-in-out infinite alternate-reverse;
+  }
+
+  @keyframes floatGlow {
+    from { transform: translate3d(0,0,0) scale(1); }
+    to   { transform: translate3d(70px, 60px, 0) scale(1.18); }
+  }
+
+  /* ============================================================
+     SCROLL PROGRESS
+     ============================================================ */
+  #progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--violet), var(--violet-lt), #fff, var(--violet-lt));
+    background-size: 200% 100%;
+    animation: shimmerBar 4s linear infinite;
+    z-index: 999;
+    box-shadow: 0 0 14px var(--glow);
+    transition: width .1s linear;
+  }
+
+  @keyframes shimmerBar {
+    to { background-position: 200% 0; }
+  }
+
+  /* ============================================================
+     LAYOUT
+     ============================================================ */
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 22px 90px;
+  }
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  header.hero {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 96px 22px 40px;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .74rem;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    color: var(--violet-lt);
+    border: 1px solid var(--stroke);
+    background: var(--glass);
+    padding: 8px 20px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    backdrop-filter: blur(10px);
+    animation: fadeUp 1s ease both;
+  }
+
+  .hero-badge .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--violet-lt);
+    box-shadow: 0 0 12px var(--violet-lt);
+    animation: pulseDot 2.2s ease-in-out infinite;
+  }
+
+  @keyframes pulseDot {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%      { transform: scale(1.6); opacity: .45; }
+  }
+
+  .title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 7.5vw, 4.6rem);
+    line-height: 1.08;
+    margin: 0 0 6px;
+    letter-spacing: .04em;
+    background: linear-gradient(90deg, #b8a6ff, #ffffff, #8b7bd8, #ffffff, #b8a6ff);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerText 8s linear infinite, fadeUp 1.1s .1s ease both;
+    filter: drop-shadow(0 0 34px rgba(139,123,216,.45));
+  }
+
+  @keyframes shimmerText {
+    to { background-position: 300% 0; }
+  }
+
+  .subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: clamp(.95rem, 2.4vw, 1.15rem);
+    color: var(--muted);
+    letter-spacing: .06em;
+    margin: 0 0 30px;
+    animation: fadeUp 1.1s .25s ease both;
+  }
+
+  /* Typing */
+  .typing-box {
+    min-height: 3.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    margin-bottom: 30px;
+    animation: fadeUp 1.1s .4s ease both;
+  }
+
+  .typing {
+    font-family: "Tiro Bangla", "Hind Siliguri", serif;
+    font-size: clamp(.95rem, 2.6vw, 1.22rem);
+    color: var(--violet-lt);
+    letter-spacing: .02em;
+  }
+
+  .typing::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1.05em;
+    margin-left: 4px;
+    background: var(--violet-lt);
+    vertical-align: -0.16em;
+    animation: caret .9s steps(1) infinite;
+  }
+
+  @keyframes caret {
+    0%, 49%   { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+
+  /* Pills */
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+    animation: fadeUp 1.1s .55s ease both;
+  }
+
+  .pill {
+    position: relative;
+    font-size: .76rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    padding: 9px 20px;
+    border-radius: 100px;
+    color: var(--violet-lt);
+    background: linear-gradient(135deg, rgba(109,90,207,.24), rgba(255,255,255,.03));
+    border: 1px solid var(--stroke);
+    backdrop-filter: blur(8px);
+    transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s ease, border-color .35s ease, color .35s ease;
+    cursor: default;
+    overflow: hidden;
+  }
+
+  .pill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.35) 50%, transparent 70%);
+    transform: translateX(-130%);
+    transition: transform .8s ease;
+  }
+
+  .pill:hover {
+    transform: translateY(-4px) scale(1.05);
+    border-color: var(--stroke-hi);
+    color: #fff;
+    box-shadow: 0 12px 34px rgba(109,90,207,.45);
+  }
+
+  .pill:hover::before {
+    transform: translateX(130%);
+  }
+
+  /* Emoji strip */
+  .emoji-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 14px;
+    font-size: 1.28rem;
+    margin-bottom: 10px;
+    animation: fadeUp 1.1s .7s ease both;
+  }
+
+  .emoji-strip span {
+    display: inline-block;
+    animation: floatEmoji 3.6s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(139,123,216,.55));
+    transition: transform .3s ease;
+  }
+
+  .emoji-strip span:hover {
+    transform: scale(1.5) rotate(-8deg);
+  }
+
+  .emoji-strip span:nth-child(1)  { animation-delay: 0s; }
+  .emoji-strip span:nth-child(2)  { animation-delay: .18s; }
+  .emoji-strip span:nth-child(3)  { animation-delay: .36s; }
+  .emoji-strip span:nth-child(4)  { animation-delay: .54s; }
+  .emoji-strip span:nth-child(5)  { animation-delay: .72s; }
+  .emoji-strip span:nth-child(6)  { animation-delay: .9s; }
+  .emoji-strip span:nth-child(7)  { animation-delay: 1.08s; }
+  .emoji-strip span:nth-child(8)  { animation-delay: 1.26s; }
+  .emoji-strip span:nth-child(9)  { animation-delay: 1.44s; }
+  .emoji-strip span:nth-child(10) { animation-delay: 1.62s; }
+  .emoji-strip span:nth-child(11) { animation-delay: 1.8s; }
+  .emoji-strip span:nth-child(12) { animation-delay: 1.98s; }
+
+  @keyframes floatEmoji {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-9px); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(26px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ============================================================
+     DIVIDER
+     ============================================================ */
+  .divider {
+    position: relative;
+    height: 1px;
+    margin: 58px auto;
+    max-width: 640px;
+    background: linear-gradient(90deg, transparent, var(--stroke-hi), var(--violet-lt), var(--stroke-hi), transparent);
+    overflow: visible;
+  }
+
+  .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--violet-lt);
+    box-shadow: 0 0 18px 5px rgba(184,166,255,.55);
+    animation: pulseDot 3s ease-in-out infinite;
+  }
+
+  /* ============================================================
+     CARDS & CONTENT
+     ============================================================ */
+  .card {
+    position: relative;
+    background: var(--glass);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    padding: 34px 30px;
+    margin-bottom: 28px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    overflow: hidden;
+    transition: transform .5s cubic-bezier(.22,1,.36,1), border-color .5s ease, box-shadow .5s ease, background .5s ease;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(184,166,255,.5), transparent 40%, transparent 60%, rgba(139,123,216,.4));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity: 0;
+    transition: opacity .5s ease;
+    pointer-events: none;
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    top: -60%; right: -60%;
+    width: 70%; height: 200%;
+    background: radial-gradient(circle, rgba(184,166,255,.14), transparent 65%);
+    opacity: 0;
+    transition: opacity .6s ease, transform .9s ease;
+    pointer-events: none;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: var(--stroke-hi);
+    background: var(--glass-hi);
+    box-shadow: 0 24px 60px -18px rgba(109,90,207,.6), 0 0 0 1px rgba(184,166,255,.12) inset;
+  }
+
+  .card:hover::before { opacity: 1; }
+  .card:hover::after  { opacity: 1; transform: translate(-12%, 8%); }
+
+  .card p { margin: 0 0 18px; color: #d9d4f2; }
+  .card p:last-child { margin-bottom: 0; }
+
+  /* Section titles */
+  h2 {
+    position: relative;
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: clamp(1.3rem, 3.6vw, 1.72rem);
+    font-weight: 600;
+    letter-spacing: .02em;
+    margin: 0 0 26px;
+    padding-bottom: 14px;
+    color: #fff;
+    background: linear-gradient(90deg, #fff, var(--violet-lt));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 2px;
+    width: 62px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--violet-lt), var(--violet), transparent);
+    box-shadow: 0 0 12px var(--glow);
+    animation: lineGrow 1.4s cubic-bezier(.22,1,.36,1) both;
+  }
+
+  @keyframes lineGrow {
+    from { width: 0; opacity: 0; }
+    to   { width: 62px; opacity: 1; }
+  }
+
+  h3 {
+    font-size: 1.12rem;
+    font-weight: 600;
+    letter-spacing: .015em;
+    margin: 0 0 16px;
+    color: var(--violet-lt);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* Blockquote */
+  blockquote {
+    position: relative;
+    margin: 26px 0;
+    padding: 22px 26px 22px 30px;
+    border-left: 2px solid var(--violet-lt);
+    border-radius: 0 14px 14px 0;
+    background: linear-gradient(90deg, rgba(109,90,207,.18), rgba(109,90,207,.02));
+    font-family: "Tiro Bangla", serif;
+    font-size: clamp(.98rem, 2.4vw, 1.1rem);
+    line-height: 1.95;
+    color: #e6e1ff;
+    font-style: italic;
+    transition: background .5s ease, border-color .5s ease, transform .5s ease;
+  }
+
+  blockquote::before {
+    content: "“";
+    position: absolute;
+    top: -6px; left: 8px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.4rem;
+    line-height: 1;
+    color: rgba(184,166,255,.32);
+    pointer-events: none;
+  }
+
+  blockquote:hover {
+    background: linear-gradient(90deg, rgba(109,90,207,.3), rgba(109,90,207,.04));
+    border-color: #fff;
+    transform: translateX(4px);
+  }
+
+  /* Center blockquote */
+  .center-quote { text-align: center; }
+
+  .center-quote blockquote {
+    border-left: none;
+    border-radius: 14px;
+    background: rgba(109,90,207,.12);
+    padding: 24px 26px;
+  }
+
+  .center-quote blockquote:hover { transform: scale(1.02); }
+
+  /* Code block */
+  pre {
+    position: relative;
+    margin: 26px 0;
+    padding: 24px 22px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, rgba(15,12,41,.92), rgba(36,36,62,.92));
+    border: 1px solid var(--stroke);
+    overflow-x: auto;
+    font-size: .84rem;
+    line-height: 1.95;
+    color: #b9b2e0;
+    box-shadow: inset 0 0 40px rgba(109,90,207,.14);
+    transition: border-color .4s ease, box-shadow .4s ease;
+  }
+
+  pre:hover {
+    border-color: var(--stroke-hi);
+    box-shadow: inset 0 0 60px rgba(109,90,207,.25), 0 12px 40px -14px var(--glow);
+  }
+
+  pre code {
+    font-family: "SFMono-Regular", "JetBrains Mono", Consolas, "Liberation Mono", monospace;
+    white-space: pre;
+  }
+
+  /* Tables */
+  .tbl {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 22px 0 6px;
+    font-size: .95rem;
+  }
+
+  .tbl td {
+    padding: 13px 18px;
+    background: rgba(255,255,255,.035);
+    border-top: 1px solid rgba(184,166,255,.1);
+    border-bottom: 1px solid rgba(184,166,255,.1);
+    color: #dcd7f5;
+    transition: background .35s ease, color .35s ease, transform .35s cubic-bezier(.22,1,.36,1), border-color .35s ease;
+  }
+
+  .tbl td:first-child {
+    border-left: 1px solid rgba(184,166,255,.1);
+    border-radius: 12px 0 0 12px;
+  }
+
+  .tbl td:last-child {
+    border-right: 1px solid rgba(184,166,255,.1);
+    border-radius: 0 12px 12px 0;
+    text-align: center;
+    width: 74px;
+    font-size: 1.15rem;
+  }
+
+  .tbl tr:hover td {
+    background: rgba(109,90,207,.24);
+    border-color: var(--stroke-hi);
+    color: #fff;
+    transform: translateX(3px);
+  }
+
+  /* Bullet list */
+  ul.fancy {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+
+  ul.fancy li {
+    position: relative;
+    padding: 9px 0 9px 30px;
+    color: #d9d4f2;
+    transition: color .3s ease, transform .35s cubic-bezier(.22,1,.36,1);
+  }
+
+  ul.fancy li::before {
+    content: "▸";
+    position: absolute;
+    left: 4px;
+    color: var(--violet-lt);
+    font-size: .9rem;
+    transition: transform .35s ease, color .35s ease;
+  }
+
+  ul.fancy li:hover {
+    color: #fff;
+    transform: translateX(6px);
+  }
+
+  ul.fancy li:hover::before {
+    transform: translateX(3px) scale(1.3);
+    color: #fff;
+  }
+
+  /* Highlight text */
+  .hl {
+    color: var(--violet-lt);
+    font-weight: 600;
+    background: linear-gradient(transparent 62%, rgba(109,90,207,.4) 62%);
+    padding: 0 2px;
+  }
+
+  .big-line {
+    display: block;
+    text-align: center;
+    font-family: "Tiro Bangla", serif;
+    font-size: clamp(1.02rem, 2.8vw, 1.22rem);
+    color: #fff;
+    line-height: 2.1;
+    letter-spacing: .01em;
+  }
+
+  .big-line .soft { color: var(--violet-lt); }
+
+  code.inline {
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: .88em;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(109,90,207,.24);
+    border: 1px solid rgba(184,166,255,.2);
+    color: var(--violet-lt);
+  }
+
+  /* ============================================================
+     REVEAL ON SCROLL
+     ============================================================ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(38px);
+    transition: opacity .95s ease, transform .95s cubic-bezier(.22,1,.36,1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ============================================================
+     AUTHOR
+     ============================================================ */
+  .author {
+    text-align: center;
+    padding: 10px 0 0;
+  }
+
+  .author .avatar-ring {
+    width: 92px; height: 92px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    background: linear-gradient(135deg, rgba(109,90,207,.5), rgba(184,166,255,.16));
+    border: 1px solid var(--stroke-hi);
+    box-shadow: 0 0 0 6px rgba(109,90,207,.12), 0 0 44px rgba(109,90,207,.5);
+    animation: ringPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes ringPulse {
+    0%, 100% { box-shadow: 0 0 0 6px rgba(109,90,207,.12), 0 0 44px rgba(109,90,207,.45); }
+    50%      { box-shadow: 0 0 0 14px rgba(109,90,207,.05), 0 0 70px rgba(139,123,216,.75); }
+  }
+
+  .author-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 22px;
+    color: var(--violet-lt);
+    font-size: 1rem;
+  }
+
+  .author-lines span {
+    display: inline-block;
+    animation: fadeUp .9s ease both;
+  }
+
+  /* ============================================================
+     SIGNATURE
+     ============================================================ */
+  .signature {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.05rem, 3vw, 1.35rem);
+    font-style: italic;
+    letter-spacing: .04em;
+    color: var(--violet-lt);
+    margin: 34px 0 10px;
+  }
+
+  .signature .name {
+    display: block;
+    margin-top: 10px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: .18em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 60px 22px 0;
+    overflow: hidden;
+  }
+
+  .footer-typing {
+    font-family: "Tiro Bangla", serif;
+    font-size: .95rem;
+    color: var(--violet-lt);
+    letter-spacing: .04em;
+    min-height: 2em;
+    margin-bottom: 34px;
+  }
+
+  .wave {
+    display: block;
+    width: 100%;
+    height: 140px;
+  }
+
+  .wave path {
+    animation: waveMove 12s ease-in-out infinite alternate;
+  }
+
+  .wave path:nth-child(2) {
+    animation-duration: 16s;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes waveMove {
+    from { transform: translateX(-16px); }
+    to   { transform: translateX(16px); }
+  }
+
+  .footer-text {
+    font-size: .78rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: rgba(184,166,255,.45);
+    padding: 8px 0 44px;
+  }
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width: 640px) {
+    header.hero { padding-top: 68px; }
+    .card { padding: 26px 20px; border-radius: 16px; }
+    .wrap { padding: 0 16px 70px; }
+    pre { font-size: .72rem; padding: 18px 14px; }
+    .tbl { font-size: .87rem; }
+    .tbl td { padding: 11px 12px; }
+    .tbl td:last-child { width: 58px; font-size: 1rem; }
+    blockquote { padding: 18px 18px 18px 22px; }
+  }
+
+  /* ============================================================
+     REDUCED MOTION
+     ============================================================ */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: .001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .001ms !important;
+      scroll-behavior: auto !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Scroll progress -->
+<div id="progress"></div>
+
+<!-- Background layers -->
+<div class="stars"></div>
+<div class="stars-2"></div>
+<div class="stars-3"></div>
+<div class="glow glow-a"></div>
+<div class="glow glow-b"></div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<header class="hero">
+
+  <div class="hero-badge">
+    <span class="dot"></span>
+    <span>একটি ব্যক্তিগত ভাণ্ডার</span>
+  </div>
+
+  <h1 class="title">echoes-of-a-wanderer</h1>
+
+  <p class="subtitle">অনন্তকালের কাছে নোট, যে চিঠিগুলো কখনো পাঠাইনি।</p>
+
+  <div class="typing-box">
+    <span class="typing" id="typing"></span>
+  </div>
+
+  <div class="pills">
+    <span class="pill">ব্যক্তিগত</span>
+    <span class="pill">অসমাপ্ত</span>
+    <span class="pill">লেখা চলছে</span>
+  </div>
+
+  <div class="emoji-strip">
+    <span>🌌</span><span>✉️</span><span>🍂</span><span>📖</span><span>🌙</span><span>💭</span>
+    <span>📬</span><span>🫀</span><span>✍️</span><span>🗂️</span><span>🕯️</span><span>🌌</span>
+  </div>
+
+</header>
+
+<!-- ============================================================
+     MAIN
+     ============================================================ -->
+<main class="wrap">
+
+  <!-- Intro -->
+  <section class="card reveal">
+    <p>জীবনের বিভিন্ন ঋতুতে সংগ্রহ করা চিন্তা, চিঠি, স্মৃতি, খণ্ডচিত্র, প্রশ্ন, স্বপ্ন এবং অসমাপ্ত শব্দের একটি ব্যক্তিগত সংগ্রহ। 🍂📖</p>
+    <p>কিছু লেখা হয়েছিল মধ্যরাতে। 🌙 কিছু এসেছিল এমন কথোপকথন থেকে যা কখনো হয়নি। 💭 কিছু ছিল কারো জন্য কিন্তু কখনো পাঠানো হয়নি। 📬 আবার কিছু লেখা হয়েছিল শুধু এই কারণে যে, সেগুলো ভেতরে রাখা শব্দে প্রকাশ করার চেয়ে ভারী মনে হয়েছিল। 🫀✍️</p>
+    <p>এই ভাণ্ডারেই তারা রয়ে গেছে: অপরিমার্জিত, অসম্পূর্ণ, এবং সর্বদা বোঝার জন্য নয়। 🗂️</p>
+    <p><span class="hl">শুধু মনে পড়ল।</span> 🕯️</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- পরিচিতি -->
+  <section class="card reveal">
+    <h2>📚 সংগ্রহ পরিচিতি 🗃️</h2>
+    <p><code class="inline">echoes-of-a-wanderer</code> একটি ব্যক্তিগত লেখার ভাণ্ডার যা একটি একক গল্পের বদলে একটি যাত্রার টুকরো টুকরো অংশ ধারণ করে। 🚶‍♂️🛤️</p>
+    <p>এটি কোনো ব্লগ, পোর্টফোলিও, বা দর্শকের জন্য লেখা সংগ্রহ নয়। এটি এমন জিনিস সংরক্ষণের জায়গা যা সময়ের সাথে হারিয়ে যেতে পারত। ⏳</p>
+
+    <div class="center-quote">
+      <blockquote>
+        «কিছু স্মৃতি মিলিয়ে যায়। 🌫️<br />
+        কিছু শব্দ থেকে যায়। 🖋️»
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- কাঠামো -->
+  <section class="card reveal">
+    <h2>🧭 ভাণ্ডার কাঠামো 🧭</h2>
+<pre><code>echoes-of-a-wanderer/
+│
+├── letters/       # লেখা চিঠি, না পাঠানো, বা অজানার উদ্দেশ্যে ✉️
+├── diary/         # ব্যক্তিগত ডায়েরি এন্ট্রি এবং তারিখযুক্ত প্রতিফলন 📔
+├── poems/         # কবিতা, গদ্য কবিতা, এবং গীতিধর্মী খণ্ডাংশ 🎶
+├── thoughts/      # দার্শনিক, অস্তিত্ববাদী, এবং ক্ষণস্থায়ী চিন্তা 💭
+├── memories/      # স্থান, মানুষ, মুহূর্ত এবং সময়ের খণ্ডাংশ 🕰️
+├── fragments/     # অসম্পূর্ণ ধারণা, অসমাপ্ত লেখা, ছড়িয়ে ছিটিয়ে থাকা শব্দ 🧩
+│
+└── README.md</code></pre>
+    <p>কাঠামোটি ইচ্ছাকৃতভাবে শিথিল। কিছু জিনিস কোনো শ্রেণীতে পড়তে অস্বীকার করে। 🌀</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- বিভাগসমূহ -->
+  <section class="reveal">
+    <div class="card">
+      <h2>📚 বিভাগসমূহ 📚</h2>
+    </div>
+
+    <div class="card reveal">
+      <h3>✉️ চিঠি ✉️</h3>
+      <p>কিছু চিঠি লেখা হয় মানুষ, স্মৃতি, সময় নিজেই, বা এমন জিনিসের প্রতি যা উত্তর দিতে পারে না। 🌌</p>
+      <p>সেগুলো একটি নাম, একটি স্থান, একটি স্মৃতি—বা শুধু দিয়ে শুরু হতে পারে:</p>
+      <div class="center-quote">
+        <blockquote>«প্রিয় মহাকাল,»</blockquote>
+      </div>
+      <p>প্রতিটি চিঠিরই প্রাপকের প্রয়োজন হয় না। কখনও কখনও লেখাই গন্তব্য। 🛤️</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>📔 ডায়েরি 📔</h3>
+      <p>ডায়েরি মুহূর্তগুলোকে তাদের অসম্পূর্ণ রূপে সংরক্ষণ করে: তারিখ, রাত, পর্যবেক্ষণ, প্রশ্ন, আবেগ, উপলব্ধি, এবং সাধারণ মুহূর্ত যা কয়েক মিনিটের জন্য অসাধারণ মনে হয়েছিল। 🌙✨</p>
+      <p>এই এন্ট্রিগুলোতে দ্বন্দ্ব থাকতে পারে। এটি ইচ্ছাকৃত। মানুষ পরিবর্তিত হয়, এবং যে ব্যক্তি বছর আগে কিছু লিখেছিল, আজ যে পড়ছে তার সাথে তার একমত হওয়ার প্রয়োজন নেই। 🔄</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>🎼 কবিতা 🎼</h3>
+      <p>সবকিছুর ব্যাখ্যা প্রয়োজন হয় না। কিছু চিন্তা ছন্দ, রূপক, নীরবতা, বা কয়েকটি সযত্নে স্থাপিত শব্দ হিসাবে থাকাই ভালো। 🤫🎵</p>
+      <p>এই বিভাগে কবিতা এবং গদ্য রয়েছে যা কোনোভাবে পৃষ্ঠায় স্থান পেয়েছে। কিছুতে হয়তো কাঠামো আছে, কিছুতে নেই। সেই পার্থক্য এখানে গুরুত্বপূর্ণ নয়। 📝</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>💭 চিন্তা 💭</h3>
+      <p>এই বিভাগে এমন প্রশ্ন রয়েছে যা উত্তর থেকে বেশি সময় ধরে টিকে ছিল, অপ্রত্যাশিত ধারণা, এবং মানুষ, সময়, অস্তিত্ব, বিশ্বাস, ব্যর্থতা, আশা, উচ্চাকাঙ্ক্ষা, এবং মানুষ হওয়ার অদ্ভুত কার্যপ্রণালী সম্পর্কে পর্যবেক্ষণ। 🌍</p>
+      <p>কিছু চিন্তা হয়তো একদিন লেখা হয়ে উঠবে। কিছু ঠিক যা আছে তাই থাকবে:</p>
+      <div class="center-quote">
+        <blockquote><strong>চিন্তা।</strong></blockquote>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3>🕰️ স্মৃতি 🕰️</h3>
+      <p>স্মৃতি একটি অবিশ্বস্ত সংরক্ষণকারী। এটি বিবরণ ভুলে যায়, রং পরিবর্তন করে, কথোপকথন পুনর্বিন্যাস করে, এবং কখনও কখনও তুচ্ছ কিছু সংরক্ষণ করে যখন গুরুত্বপূর্ণ কিছু হারিয়ে যেতে দেয়। 🧠🌫️</p>
+      <p>এই বিভাগে যা এখনও মনে আছে তা ধারণ করে—যদিও সঠিকভাবে নয়, সৎভাবে। 🤍</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>🧩 খণ্ডাংশ 🧩</h3>
+      <p>প্রতিটি বাক্য সম্পূর্ণ লেখা হওয়ার যোগ্য নয়, এবং প্রতিটি ধারণা একটি গল্প হওয়ার মতো যথেষ্ট সময় টিকে থাকে না। 🌱</p>
+      <p>এখানেই অসমাপ্ত জিনিসগুলো চাপ ছাড়াই থাকতে পারে:</p>
+      <ul class="fancy">
+        <li>অর্ধ-লেখা অনুচ্ছেদ ✍️</li>
+        <li>এক-লাইনের চিন্তা 💬</li>
+        <li>গল্প ছাড়া শিরোনাম 🏷️</li>
+        <li>সমাপ্তি ছাড়া গল্প 📖</li>
+        <li>শব্দ যা একদিন কিছু হতে পারে—বা চিরকাল খণ্ডাংশ হয়ে থাকতে পারে 🪶</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- সময়রেখা -->
+  <section class="card reveal">
+    <h2>🗺️ মানচিত্রহীন একটি সময়রেখা 🗺️</h2>
+    <p>এই ভাণ্ডার একই ব্যক্তির বিভিন্ন সংস্করণ বিস্তৃত করতে পারে:</p>
+    <table class="tbl">
+      <tbody>
+        <tr><td>আশাবাদী সংস্করণ</td><td>🌞</td></tr>
+        <tr><td>বিভ্রান্ত সংস্করণ</td><td>🌫️</td></tr>
+        <tr><td>উচ্চাকাঙ্ক্ষী সংস্করণ</td><td>🚀</td></tr>
+        <tr><td>ক্লান্ত সংস্করণ</td><td>😮‍💨</td></tr>
+        <tr><td>কৌতূহলী সংস্করণ</td><td>🔍</td></tr>
+        <tr><td>যে সংস্করণ ভেবেছিল সবকিছু সমাধান হয়ে গেছে</td><td>🧩</td></tr>
+        <tr><td>যে সংস্করণ শেষে বুঝেছিল তা হয়নি</td><td>🌌</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:20px;">সামঞ্জস্যের কোনো প্রয়োজন নেই। ভাণ্ডার নিজের সাথে দ্বন্দ্ব করতে পারে কারণ ভেতর থেকে দেখলে বৃদ্ধি খুব কমই সামঞ্জস্যপূর্ণ দেখায়। 🌱</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- গোপনীয়তা -->
+  <section class="card reveal">
+    <h2>🔒 গোপনীয়তা 🔒</h2>
+    <p>এই সংগ্রহটি ইচ্ছাকৃতভাবে ব্যক্তিগত। 🤫</p>
+    <p>কিছু লেখায় ব্যক্তিগত স্মৃতি, ব্যক্তিগত প্রতিফলন, নাম, কথোপকথন, বা চিন্তা থাকতে পারে যা কখনো প্রকাশ্যে খাওয়ার জন্য নয়। 🫂</p>
+    <p><span class="hl">ব্যক্তিগত মানে নিষ্পত্তিযোগ্য নয়। এর মানে সুরক্ষিত।</span> 🛡️</p>
+    <p>যদি এই সংগ্রহটি কখনো শেয়ার করা হয়, প্রকাশিত হয়, বা অন্য কোনো মাধ্যমে রূপান্তরিত হয়, তবে এর মধ্যে উল্লিখিত ব্যক্তিদের মূল প্রসঙ্গ এবং গোপনীয়তা সযত্নে বিবেচনা করা উচিত। ⚖️</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- নীতিমালা -->
+  <section class="card reveal">
+    <h2>🧭 ভাণ্ডারের নীতিমালা 🧭</h2>
+    <table class="tbl">
+      <tbody>
+        <tr><td>সৎভাবে লেখো।</td><td>✍️</td></tr>
+        <tr><td>নীরবে সংরক্ষণ করো।</td><td>🤫</td></tr>
+        <tr><td>সযত্নে সম্পাদনা করো।</td><td>🛠️</td></tr>
+        <tr><td>গুরুত্বপূর্ণ কিছু ভুলো না।</td><td>🧠</td></tr>
+        <tr><td>অসমাপ্ত কিছুতে জোর করো না।</td><td>🌱</td></tr>
+        <tr><td>দ্বন্দ্ব থাকতে দাও।</td><td>🔄</td></tr>
+        <tr><td>যা গুরুত্বপূর্ণ তা রাখো।</td><td>🤍</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:20px;">কোনো প্রকাশের সময়সূচি, শব্দ সংখ্যা, বা শেষ করার প্রত্যাশা নেই। কোনো লেখাকে সুন্দর হতে হবে না। একটি পৃষ্ঠা শুধু থাকতে পারে। 📄</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- নিখুঁত ভাণ্ডার নয় -->
+  <section class="card reveal">
+    <h2>🕯️ নিখুঁত ভাণ্ডার নয় 🕯️</h2>
+    <p>এটি প্রতিটি মুহূর্ত সংরক্ষণের চেষ্টা নয়। এটি কিছু মুহূর্ত সংরক্ষণের চেষ্টা যা গুরুত্বপূর্ণ ছিল। ✨</p>
+    <p>হারিয়ে যাওয়া বছর, অসমাপ্ত গল্প, ভুল স্মৃতি, এবং এমন পৃষ্ঠা থাকবে যা শুধু লেখকের কাছেই বোধগম্য। 🗓️</p>
+    <p><span class="hl">এটা ঠিক আছে।</span> 🤍</p>
+    <p>একটি ভাণ্ডারকে সবকিছু ব্যাখ্যা করার প্রয়োজন নেই। এটিকে শুধু মনে রাখতে হবে। 🧠</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- কেন -->
+  <section class="card reveal">
+    <h2>🌌 কেন “Echoes of a Wanderer”? 🌌</h2>
+    <p>কারণ সম্ভবত জীবনের বেশিরভাগ অংশই পিছনে ফিরে তাকালে এটাই হয়ে ওঠে। 🛤️</p>
+    <p>আমরা স্থানের মধ্য দিয়ে চলি। মানুষের সাথে দেখা করি। মানুষ হারাই। জিনিস তৈরি করি, ভাঙি, শিখি, ভুলি, এবং আবার শুরু করি। 🔄</p>
+    <p>শেষে যা থাকে তা হল প্রতিধ্বনি:</p>
+    <ul class="fancy">
+      <li>কেউ একবার বলে যাওয়া একটি বাক্য 💬</li>
+      <li>একটি রাত যা কিছু বদলে দিয়েছিল 🌙</li>
+      <li>একটি স্বপ্ন যা কখনো হয়নি 💭</li>
+      <li>একটি চিঠি যা কখনো পাঠানো হয়নি ✉️</li>
+      <li>আমাদের একটি সংস্করণ যা আর নেই 🪞</li>
+    </ul>
+    <p style="margin-top:20px;">এই ভাণ্ডার সেই প্রতিধ্বনিগুলোর জন্য একটি জায়গা। 🌫️</p>
+
+    <div class="center-quote">
+      <blockquote>
+        <strong>সবকিছুর বেঁচে থাকার প্রয়োজন নেই।</strong><br />
+        <strong>কিন্তু কিছু জিনিস মনে রাখার যোগ্য।</strong> 🕯️
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- লেখক -->
+  <section class="card reveal author">
+    <h2>👤 লেখক সম্পর্কে 👤</h2>
+    <div class="avatar-ring">🌙</div>
+    <p>সময়ের মধ্য দিয়ে চলমান একজন পথিক দ্বারা লেখা ও রক্ষণাবেক্ষণ করা। ⏳</p>
+    <table class="tbl">
+      <tbody>
+        <tr><td>পেশায় একজন সফটওয়্যার ইঞ্জিনিয়ার।</td><td>💻</td></tr>
+        <tr><td>পরিস্থিতিতে চিন্তার সংগ্রাহক।</td><td>🧠</td></tr>
+        <tr><td>প্রয়োজনে জীবনের ছাত্র।</td><td>🌱</td></tr>
+      </tbody>
+    </table>
+    <div class="author-lines">
+      <span>এখনও শিখছি। 📚</span>
+      <span>এখনও প্রশ্ন করছি। ❓</span>
+      <span>এখনও লিখছি। ✍️</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- সমাপ্তি -->
+  <section class="card reveal">
+    <h2>🌅 সমাপ্তি 🌅</h2>
+    <p>সম্ভবত একদিন এই পৃষ্ঠাগুলো ইন্টারনেটের ইতিহাসে কোথাও নীরবে পড়ে থাকা একটি পুরনো ভাণ্ডার ছাড়া আর কিছুই থাকবে না। 🌐</p>
+    <p>সম্ভবত কেউ কখনো এগুলো পড়বে না। 👀</p>
+    <p><span class="hl">এটা পুরোপুরি ঠিক আছে।</span> 🤍</p>
+    <p>এগুলো কখনো লেখা হয়নি কারণ এগুলোর একটি দর্শক প্রয়োজন ছিল। এগুলো লেখা হয়েছিল কারণ, সময়ের একটি মুহূর্তে, কারো শব্দগুলো রাখার জন্য একটি জায়গা প্রয়োজন ছিল। 🫀📝</p>
+    <p>এবং এখন তাদের একটি জায়গা আছে। 📍</p>
+    <p><strong>এখানে।</strong></p>
+
+    <div class="center-quote">
+      <blockquote>«অনন্তকালের কাছে নোট, যে চিঠিগুলো কখনো পাঠাইনি। ✉️»</blockquote>
+    </div>
+
+    <div class="signature">
+      এক মহাজাগতিক মুসাফির
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- টীকা -->
+  <section class="card reveal">
+    <h2>🗒️ টীকা</h2>
+    <p>সম্ভবত একটি ভাণ্ডার শেষ পর্যন্ত এটাই করতে পারে: বিস্মৃতির নীরব কাজের বিরুদ্ধে কয়েকটি ভঙ্গুর চিহ্ন ধরে রাখা। 🕯️ নিখুঁতভাবে নয়, সম্পূর্ণভাবে নয়, এবং চিরকালের জন্য নয়—কিন্তু যথেষ্ট দীর্ঘ সময়ের জন্য এই বলতে যে, এই মুহূর্তগুলো ঘটেছিল, তারা গুরুত্বপূর্ণ ছিল, এবং কেউ এখানে ছিল তাদের মনে রাখতে। 🌌</p>
+    <p>পৃষ্ঠাগুলো অসমাপ্ত থাকতে পারে। স্মৃতি পরিবর্তিত হতে পারে। যে ব্যক্তি তাদের কাছে ফিরে আসে সে আর তাদের লেখক নাও হতে পারে। তবুও, প্রতিটি খণ্ডাংশ একই যাত্রার অংশ: একটি জীবন এগিয়ে চলছে, পিছনে প্রতিধ্বনি রেখে। 🚶‍♂️🌫️</p>
+    <p>এবং যদি এই শব্দগুলো একদিন বেঁচে থাকার একটি নীরব রেকর্ড ছাড়া আর কিছু না হয়, তবে তারা তাদের উদ্দেশ্য পূরণ করেছে। 🤍</p>
+
+    <div class="center-quote">
+      <blockquote>
+        <strong>কিছু জিনিস পাঠানোর জন্য নয়।</strong> ✉️<br />
+        <strong>কিছু জিনিস শুধু থেকে যাওয়ার জন্য।</strong> 🕯️
+      </blockquote>
+    </div>
+
+    <div class="signature">
+      Mr.0x1nj3ct04 ☠️
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-typing" id="footerTyping"></div>
+
+  <svg class="wave" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="rgba(48,43,99,.55)" d="M0,80 C240,140 480,20 720,60 C960,100 1200,30 1440,70 L1440,140 L0,140 Z"></path>
+    <path fill="rgba(109,90,207,.35)" d="M0,100 C260,50 520,120 780,80 C1040,40 1260,110 1440,90 L1440,140 L0,140 Z"></path>
+    <path fill="rgba(15,12,41,.9)" d="M0,118 C300,88 600,138 900,112 C1140,92 1300,126 1440,116 L1440,140 L0,140 Z"></path>
+  </svg>
+
+  <div class="footer-text">still writing. ✍️</div>
+</footer>
+
+<script>
+  /* ============================================================
+     SCROLL PROGRESS
+     ============================================================ */
+  (function () {
+    var bar = document.getElementById('progress');
+    function update() {
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var pct = max > 0 ? (h.scrollTop || document.body.scrollTop) / max * 100 : 0;
+      bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  /* ============================================================
+     TYPEWRITER — HERO
+     ============================================================ */
+  (function () {
+    var el = document.getElementById('typing');
+    if (!el) return;
+
+    var lines = [
+      'অনন্তকালের কাছে নোট, যে চিঠিগুলো কখনো পাঠাইনি।',
+      'কিছু স্মৃতি মিলিয়ে যায়। কিছু শব্দ থেকে যায়।',
+      'মধ্যরাতে লেখা, নীরবতায় রাখা।',
+      'শুধু মনে পড়ল।'
+    ];
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { el.textContent = lines[0]; return; }
+
+    var li = 0, ci = 0, deleting = false;
+
+    function tick() {
+      var text = lines[li];
+      if (!deleting) {
+        ci++;
+        el.textContent = text.slice(0, ci);
+        if (ci === text.length) {
+          deleting = true;
+          setTimeout(tick, 2100);
+          return;
+        }
+        setTimeout(tick, 62);
+      } else {
+        ci--;
+        el.textContent = text.slice(0, ci);
+        if (ci === 0) {
+          deleting = false;
+          li = (li + 1) % lines.length;
+          setTimeout(tick, 480);
+          return;
+        }
+        setTimeout(tick, 26);
+      }
+    }
+    setTimeout(tick, 900);
+  })();
+
+  /* ============================================================
+     TYPEWRITER — FOOTER
+     ============================================================ */
+  (function () {
+    var el = document.getElementById('footerTyping');
+    if (!el) return;
+
+    var lines = [
+      'সৎভাবে লেখো। নীরবে সংরক্ষণ করো।',
+      'দ্বন্দ্ব থাকতে দাও।',
+      'যা গুরুত্বপূর্ণ তা রাখো।'
+    ];
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { el.textContent = lines[0]; return; }
+
+    var li = 0, ci = 0, deleting = false;
+
+    function tick() {
+      var text = lines[li];
+      if (!deleting) {
+        ci++;
+        el.textContent = text.slice(0, ci);
+        if (ci === text.length) {
+          deleting = true;
+          setTimeout(tick, 1900);
+          return;
+        }
+        setTimeout(tick, 68);
+      } else {
+        ci--;
+        el.textContent = text.slice(0, ci);
+        if (ci === 0) {
+          deleting = false;
+          li = (li + 1) % lines.length;
+          setTimeout(tick, 420);
+          return;
+        }
+        setTimeout(tick, 28);
+      }
+    }
+    setTimeout(tick, 1400);
+  })();
+
+  /* ============================================================
+     REVEAL ON SCROLL
+     ============================================================ */
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    items.forEach(function (el) { io.observe(el); });
+  })();
+
+  /* ============================================================
+     SUBTLE PARALLAX ON GLOWS
+     ============================================================ */
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var a = document.querySelector('.glow-a');
+    var b = document.querySelector('.glow-b');
+    var raf = null;
+
+    window.addEventListener('scroll', function () {
+      if (raf) return;
+      raf = requestAnimationFrame(function () {
+        var y = window.scrollY || 0;
+        if (a) a.style.transform = 'translate3d(0,' + (y * 0.06) + 'px,0)';
+        if (b) b.style.transform = 'translate3d(0,' + (y * -0.05) + 'px,0)';
+        raf = null;
+      });
+    }, { passive: true });
+  })();
+</script>
+
+</body>
+</html>
