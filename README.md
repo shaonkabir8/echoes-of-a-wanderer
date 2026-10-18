@@ -1,761 +1,213 @@
-<details close>
-<summary>🇬🇧 English</summary>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,6,12,20&height=180&section=header&animation=fadeIn" width="100%" />
+</p>
 
-<div align="center">
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=20&duration=3500&pause=800&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=780&height=110&lines=some+words+survive+without+answers.;some+letters+reach+without+addresses.;someone+walked+through+%E2%80%94+stopped+%E2%80%94+wrote." alt="Typing SVG" />
+</p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=230&section=header&text=echoes-of-a-wanderer&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Notes%20to%20eternity%2C%20pages%20I%20never%20sent.&descAlignY=58&descSize=17" width="100%" />
+<p align="center">
+  <img src="https://img.shields.io/badge/status-personal%20archive-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="status" />
+  <img src="https://img.shields.io/badge/language-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE-A78BFA?style=for-the-badge" alt="language" />
+  <img src="https://img.shields.io/badge/chapters-08-7C3AED?style=for-the-badge" alt="chapters" />
+  <img src="https://img.shields.io/badge/mood-wandering-6D28D9?style=for-the-badge&logo=starship&logoColor=white" alt="mood" />
+</p>
 
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&size=23&duration=4200&pause=1100&color=B8A6FF&center=true&vCenter=true&width=620&lines=Notes+to+eternity%2C+pages+I+never+sent.;Some+memories+fade.+Some+words+remain.;Written+at+midnight%2C+kept+in+silence.;Just+remembered." alt="Typing SVG" />
-</a>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700" />
+</p>
 
-<br/>
+# 🌌 Echoes of a Wonderer
 
-<img src="https://img.shields.io/badge/status-private-0f0c29?style=for-the-badge&labelColor=302b63&color=6d5acf" />
-<img src="https://img.shields.io/badge/archive-unfinished-0f0c29?style=for-the-badge&labelColor=302b63&color=6d5acf" />
-<img src="https://img.shields.io/badge/words-still%20writing-0f0c29?style=for-the-badge&labelColor=302b63&color=6d5acf" />
+*একটা খাতা। কিছু লেখা। আর কিছু কথা।*
 
-</div>
+---
 
-<br/>
+## শুরুর কথা
 
-<div align="center">
+আমার একটা অভ্যেস আছে। রাত বাড়লে জানালার পাশে দাঁড়াই। বাইরে তাকাই না ঠিক, কিন্তু দাঁড়াই। এই দাঁড়ানোটার কোনো মানে নেই। তবু নেই।
 
-🌌 &nbsp; ✉️ &nbsp; 🍂 &nbsp; 📖 &nbsp; 🌙 &nbsp; 💭 &nbsp; 📬 &nbsp; 🫀 &nbsp; ✍️ &nbsp; 🗂️ &nbsp; 🕯️ &nbsp; 🌌
+মানুষ কেন অকারণ কাজ করে? এই প্রশ্নের উত্তর আমি জানি না। জানলে হয়তো মানুষ হওয়াটাই সহজ হয়ে যেত।
 
-</div>
+এই লেখাগুলো কাউকে দেখানোর জন্য লেখা হয়নি। আবার গোপনও না। আমার দাদার একটা চায়ের কাপ ছিল। কেউ সেই কাপে চা খেত না। কাপটা শুধু ছিল। এটা তেমনই।
 
-<br/>
+তুমি পড়ছ — এটা একটা অদ্ভুত ব্যাপার। আমার লেখা পড়ে তুমি কী করবে, জানি না। তবে পড়তে শুরু করেছ, মানে কিছু একটা ঠিক হয়েছে। কোথায় কী ঠিক হলো, সেটা তুমি নিজেও জানো না।
 
-A private archive of thoughts, letters, memories, fragments, questions, dreams, and unfinished words collected across different seasons of life. 🍂📖
+আমিও না।
 
-Some were written at midnight. 🌙 Some emerged from conversations that never happened. 💭 Some were meant for someone but were never sent. 📬 Others were written simply because keeping them inside felt heavier than putting them into words. 🫀✍️
+---
 
-This repository is where they remain: unpolished, incomplete, and not always meant to be understood. 🗂️
+## আটটা দরজা
 
-**Just remembered.** 🕯️
+<details>
+<summary><strong>এক · চিঠি</strong> — <em>যার ঠিকানা নেই</em></summary>
 
-<br/>
+প্রিয় মহাকাল।
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
+এই কথাটা লিখতে লিখতে কতবার থেমেছি, মনে নেই। কারণ "প্রিয় মহাকাল" — এটা কার নাম? কে উত্তর দেবে? কোনো ঠিকানা নেই। ডাকপিয়ন নেই। ডাকবাক্স ভাঙা।
 
-<br/>
+তবু চিঠি লেখা হয়।
 
-## 📚 Archive Overview 🗃️
+কারণ কথা জমে গেলে মানুষ অসুস্থ হয়ে পড়ে। বলতে হয়। কাউকে, বা কাউকে না। যাকে বলা হচ্ছে, তার দরকার নেই — দরকারটা বলার মধ্যে।
 
-`echoes-of-a-wanderer` is a personal writing archive containing pieces of a journey rather than a single story. 🚶‍♂️🛤️
+আমার এক দাদা ছিলেন। তিনি প্রতিদিন একটা চিঠি লিখতেন। কাউকে পাঠাতেন না। একদিন জিজ্ঞেস করলাম — চিঠি কাকে লেখেন? তিনি বললেন, চিঠি কাউকে লেখা হয় না। চিঠি লেখা হয়।
 
-It is not a blog, portfolio, or collection written for an audience. It is a place to preserve things that might otherwise disappear with time. ⏳
-
-<div align="center">
-
-> *«Some memories fade. 🌫️*
-> *Some words remain. 🖋️»*
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🧭 Archive Structure 🧭
-
-```text
-echoes-of-a-wanderer/
-│
-├── letters/       # Letters written, unsent, or addressed to the unknown ✉️
-├── diary/         # Personal diary entries and dated reflections 📔
-├── poems/         # Poetry, prose poetry, and lyrical fragments 🎶
-├── thoughts/      # Philosophical, existential, and passing thoughts 💭
-├── memories/      # Fragments of places, people, moments, and time 🕰️
-├── fragments/     # Incomplete ideas, unfinished writing, scattered words 🧩
-│
-└── README.md
-```
-
-The structure is intentionally loose. Some things refuse to belong to a category. 🌀
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 📚 Sections 📚
-
-<br/>
-
-### ✉️ Letters ✉️
-
-Some letters are written to people, memories, time itself, or things that cannot answer. 🌌
-
-They may begin with a name, a place, a memory—or simply:
-
-<div align="center">
-
-> *«প্রিয় মহাকাল,»*
-
-</div>
-
-Not every letter needs a recipient. Sometimes writing is the destination. 🛤️
-
-<br/>
-
-### 📔 Diary 📔
-
-The diary preserves moments in their imperfect form: dates, nights, observations, questions, emotions, realizations, and ordinary moments that felt extraordinary for a few minutes. 🌙✨
-
-These entries may contain contradictions. That is intentional. People change, and the person who wrote something years ago does not necessarily have to agree with the person reading it today. 🔄
-
-<br/>
-
-### 🎼 Poems 🎼
-
-Not everything needs to be explained. Some thoughts are better left as rhythm, metaphor, silence, or a few carefully placed words. 🤫🎵
-
-This section holds poems and prose that found their way onto a page. Some may have structure, and some may not. That distinction is not important here. 📝
-
-<br/>
-
-### 💭 Thoughts 💭
-
-This section contains questions that stayed longer than answers, unexpected ideas, and observations about people, time, existence, faith, failure, hope, ambition, and the strange mechanics of being human. 🌍
-
-Some thoughts may eventually become writing. Some will remain exactly what they are:
-
-<div align="center">
-
-**thoughts.**
-
-</div>
-
-<br/>
-
-### 🕰️ Memories 🕰️
-
-Memory is an unreliable archivist. It forgets details, changes colours, rearranges conversations, and sometimes preserves something insignificant while allowing something important to disappear. 🧠🌫️
-
-This section captures whatever can still be remembered—not necessarily accurately, but honestly. 🤍
-
-<br/>
-
-### 🧩 Fragments 🧩
-
-Not every sentence deserves to become a finished piece, and not every idea survives long enough to become a story. 🌱
-
-This is where unfinished things are allowed to exist without pressure:
-
-- Half-written paragraphs ✍️
-- One-line thoughts 💬
-- Titles without stories 🏷️
-- Stories without endings 📖
-- Words that may someday become something—or may remain fragments forever 🪶
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🗺️ A Timeline Without a Map 🗺️
-
-This archive may span different versions of the same person:
-
-| | |
-|:--|:--|
-| The optimistic version | 🌞 |
-| The confused version | 🌫️ |
-| The ambitious version | 🚀 |
-| The exhausted version | 😮‍💨 |
-| The curious version | 🔍 |
-| The version who thought everything was figured out | 🧩 |
-| The version who eventually realized it was not | 🌌 |
-
-There is no requirement for consistency. The archive is allowed to contradict itself because growth rarely looks consistent from the inside. 🌱
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🔒 Privacy 🔒
-
-This repository is intentionally private. 🤫
-
-Some writings may contain personal memories, private reflections, names, conversations, or thoughts never intended for public consumption. 🫂
-
-Private does not mean disposable. It means protected. 🛡️
-
-If this repository is ever shared, published, or transformed into another medium, the original context and privacy of the people mentioned within it should be considered carefully. ⚖️
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🧭 Archive Principles 🧭
-
-<div align="center">
-
-| Principle | |
-|:--|:--:|
-| Write honestly. | ✍️ |
-| Preserve quietly. | 🤫 |
-| Edit carefully. | 🛠️ |
-| Forget nothing important. | 🧠 |
-| Force nothing unfinished. | 🌱 |
-| Let contradictions exist. | 🔄 |
-| Keep what matters. | 🤍 |
-
-</div>
-
-There is no publishing schedule, word count, or expectation to finish. No piece is required to be beautiful. A page can simply exist. 📄
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🕯️ No Perfect Archive 🕯️
-
-This is not an attempt to preserve every moment. It is an attempt to preserve some of the moments that mattered. ✨
-
-There will be missing years, unfinished stories, inaccurate memories, and pages that make sense only to the person who wrote them. 🗓️
-
-That is okay. 🤍
-
-An archive does not need to explain everything. It only needs to remember. 🧠
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🌌 Why “Echoes of a Wanderer”? 🌌
-
-Because perhaps that is what most of life becomes in retrospect. 🛤️
-
-We move through places. We meet people. We lose people. We build things, break things, learn, forget, and begin again. 🔄
-
-Eventually, what remains are echoes:
-
-<div align="center">
-
-> A sentence someone once said 💬
-> A night that changed something 🌙
-> A dream that never happened 💭
-> A letter that was never sent ✉️
-> A version of ourselves that no longer exists 🪞
-
-</div>
-
-This repository is a place for those echoes. 🌫️
-
-<br/>
-
-<div align="center">
-
-**Not everything needs to survive.**
-**But some things deserve to be remembered.** 🕯️
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 👤 About the Author 👤
-
-<div align="center">
-
-Written and maintained by a wanderer passing through time. ⏳
-
-| | |
-|:--|:--|
-| A software engineer by profession. | 💻 |
-| A collector of thoughts by circumstance. | 🧠 |
-| A student of life by necessity. | 🌱 |
-
-Still learning. 📚
-Still questioning. ❓
-Still writing. ✍️
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🌅 Closing 🌅
-
-Perhaps one day these pages will become nothing more than an old repository sitting quietly somewhere in the history of the internet. 🌐
-
-Perhaps nobody will ever read them. 👀
-
-That is perfectly fine. 🤍
-
-They were never written because they needed an audience. They were written because, for a moment in time, someone needed somewhere to put the words. 🫀📝
-
-And now they have a place. 📍
-
-**Here.**
-
-<div align="center">
-
-> *«Notes to eternity, pages I never sent. ✉️»*
-
-**— এক মহাজাগতিক মুসাফির**
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🗒️ Notes
-
-Perhaps that is all an archive can ultimately do: hold a few fragile traces against the quiet work of forgetting. 🕯️ Not perfectly, not completely, and not forever—but long enough to say that these moments happened, that they mattered, and that someone was here to remember them. 🌌
-
-The pages may remain unfinished. The memories may change. The person who returns to them may no longer be the person who wrote them. Still, each fragment belongs to the same journey: a life moving forward, leaving echoes behind. 🚶‍♂️🌫️
-
-And if these words ever become nothing more than a quiet record of having lived, then they will have fulfilled their purpose. 🤍
-
-<div align="center">
-
-**Some things are not meant to be sent.** ✉️
-**Some things are simply meant to remain.** 🕯️
-
-**— Mr.0x1nj3ct04** ☠️
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&size=20&duration=4000&pause=1000&color=8B7BD8&center=true&vCenter=true&width=560&lines=Write+honestly.+Preserve+quietly.;Let+contradictions+exist.;Keep+what+matters." alt="Typing SVG" />
-</a>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=140&section=footer&text=still%20writing.%20%E2%9C%8D%EF%B8%8F&fontSize=20&fontColor=b8a6ff&animation=fadeIn&fontAlignY=72" width="100%" />
-
-</div>
+কথাটা তখন বুঝিনি। এখন বুঝি।
 
 </details>
 
-<details open > 
-<summary>🇧🇩 বাংলা</summary>
+<details>
+<summary><strong>দুই · ডায়েরি</strong> — <em>নিজের সঙ্গে পুরোনো পরিচয়</em></summary>
 
-<div align="center">
+একটা কথা বলি।
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=230&section=header&text=echoes-of-a-wanderer&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Notes%20to%20eternity%2C%20pages%20I%20never%20sent.&descAlignY=58&descSize=17" width="100%" />
+আজ সকালে ঘুম থেকে উঠে খুব কাঁদতে ইচ্ছা করছিল। কোনো কারণ নেই। একদম নেই। গতকাল ভালোই ছিলাম। পরশুও ভালো। হঠাৎ কেন?
 
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&size=23&duration=4200&pause=1100&color=B8A6FF&center=true&vCenter=true&width=620&lines=Notes+to+eternity%2C+pages+I+never+sent.;Some+memories+fade.+Some+words+remain.;Written+at+midnight%2C+kept+in+silence.;Just+remembered." alt="Typing SVG" />
-</a>
+কেউ জিজ্ঞেস করলে বলতে পারব না। কিন্তু ডায়েরিতে লিখে রাখব। কেননা ডায়েরি কোনো প্রশ্ন করে না। সে শুধু রেখে দেয়।
 
-<br/>
+এই আর্কাইভের সবচেয়ে সৎ অংশ ডায়েরি। কারণ এখানে মিথ্যে বলার কোনো মানে নেই। কেউ পড়বে না — জেনেও কেউ পুরোপুরি মিথ্যে লিখতে পারে না। মানুষ নিজের কাছেও কিছু লুকোয়। শুধু ডায়েরি তার ব্যতিক্রম।
 
-<img src="https://img.shields.io/badge/status-private-0f0c29?style=for-the-badge&labelColor=302b63&color=6d5acf" />
-<img src="https://img.shields.io/badge/archive-unfinished-0f0c29?style=for-the-badge&labelColor=302b63&color=6d5acf" />
-<img src="https://img.shields.io/badge/words-still%20writing-0f0c29?style=for-the-badge&labelColor=302b63&color=6d5acf" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-🌌 &nbsp; ✉️ &nbsp; 🍂 &nbsp; 📖 &nbsp; 🌙 &nbsp; 💭 &nbsp; 📬 &nbsp; 🫀 &nbsp; ✍️ &nbsp; 🗂️ &nbsp; 🕯️ &nbsp; 🌌
-
-</div>
-
-<br/>
-
-জীবনের বিভিন্ন ঋতুতে সংগ্রহ করা চিন্তা, চিঠি, স্মৃতি, খণ্ডচিত্র, প্রশ্ন, স্বপ্ন এবং অসমাপ্ত শব্দের একটি ব্যক্তিগত সংগ্রহ। 🍂📖
-
-কিছু লেখা হয়েছিল মধ্যরাতে। 🌙 কিছু এসেছিল এমন কথোপকথন থেকে যা কখনো হয়নি। 💭 কিছু ছিল কারো জন্য কিন্তু কখনো পাঠানো হয়নি। 📬 আবার কিছু লেখা হয়েছিল শুধু এই কারণে যে, সেগুলো ভেতরে রাখা শব্দে প্রকাশ করার চেয়ে ভারী মনে হয়েছিল। 🫀✍️
-
-এই ভাণ্ডারেই তারা রয়ে গেছে: অপরিমার্জিত, অসম্পূর্ণ, এবং সর্বদা বোঝার জন্য নয়। 🗂️
-
-**শুধু মনে পড়ল।** 🕯️
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 📚 সংগ্রহ পরিচিতি 🗃️
-
-`echoes-of-a-wanderer` একটি ব্যক্তিগত লেখার ভাণ্ডার যা একটি একক গল্পের বদলে একটি যাত্রার টুকরো টুকরো অংশ ধারণ করে। 🚶‍♂️🛤️
-
-এটি কোনো ব্লগ, পোর্টফোলিও, বা দর্শকের জন্য লেখা সংগ্রহ নয়। এটি এমন জিনিস সংরক্ষণের জায়গা যা সময়ের সাথে হারিয়ে যেতে পারত। ⏳
-
-<div align="center">
-
-> *«কিছু স্মৃতি মিলিয়ে যায়। 🌫️*
-> *কিছু শব্দ থেকে যায়। 🖋️»*
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🧭 ভাণ্ডার কাঠামো 🧭
-
-```text
-echoes-of-a-wanderer/
-│
-├── letters/       # লেখা চিঠি, না পাঠানো, বা অজানার উদ্দেশ্যে ✉️
-├── diary/         # ব্যক্তিগত ডায়েরি এন্ট্রি এবং তারিখযুক্ত প্রতিফলন 📔
-├── poems/         # কবিতা, গদ্য কবিতা, এবং গীতিধর্মী খণ্ডাংশ 🎶
-├── thoughts/      # দার্শনিক, অস্তিত্ববাদী, এবং ক্ষণস্থায়ী চিন্তা 💭
-├── memories/      # স্থান, মানুষ, মুহূর্ত এবং সময়ের খণ্ডাংশ 🕰️
-├── fragments/     # অসম্পূর্ণ ধারণা, অসমাপ্ত লেখা, ছড়িয়ে ছিটিয়ে থাকা শব্দ 🧩
-│
-└── README.md
-```
-
-কাঠামোটি ইচ্ছাকৃতভাবে শিথিল। কিছু জিনিস কোনো শ্রেণীতে পড়তে অস্বীকার করে। 🌀
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 📚 বিভাগসমূহ 📚
-
-<br/>
-
-### ✉️ চিঠি ✉️
-
-কিছু চিঠি লেখা হয় মানুষ, স্মৃতি, সময় নিজেই, বা এমন জিনিসের প্রতি যা উত্তর দিতে পারে না। 🌌
-
-সেগুলো একটি নাম, একটি স্থান, একটি স্মৃতি—বা শুধু দিয়ে শুরু হতে পারে:
-
-<div align="center">
-
-> *«প্রিয় মহাকাল,»*
-
-</div>
-
-প্রতিটি চিঠিরই প্রাপকের প্রয়োজন হয় না। কখনও কখনও লেখাই গন্তব্য। 🛤️
-
-<br/>
-
-### 📔 ডায়েরি 📔
-
-ডায়েরি মুহূর্তগুলোকে তাদের অসম্পূর্ণ রূপে সংরক্ষণ করে: তারিখ, রাত, পর্যবেক্ষণ, প্রশ্ন, আবেগ, উপলব্ধি, এবং সাধারণ মুহূর্ত যা কয়েক মিনিটের জন্য অসাধারণ মনে হয়েছিল। 🌙✨
-
-এই এন্ট্রিগুলোতে দ্বন্দ্ব থাকতে পারে। এটি ইচ্ছাকৃত। মানুষ পরিবর্তিত হয়, এবং যে ব্যক্তি বছর আগে কিছু লিখেছিল, আজ যে পড়ছে তার সাথে তার একমত হওয়ার প্রয়োজন নেই। 🔄
-
-<br/>
-
-### 🎼 কবিতা 🎼
-
-সবকিছুর ব্যাখ্যা প্রয়োজন হয় না। কিছু চিন্তা ছন্দ, রূপক, নীরবতা, বা কয়েকটি সযত্নে স্থাপিত শব্দ হিসাবে থাকাই ভালো। 🤫🎵
-
-এই বিভাগে কবিতা এবং গদ্য রয়েছে যা কোনোভাবে পৃষ্ঠায় স্থান পেয়েছে। কিছুতে হয়তো কাঠামো আছে, কিছুতে নেই। সেই পার্থক্য এখানে গুরুত্বপূর্ণ নয়। 📝
-
-<br/>
-
-### 💭 চিন্তা 💭
-
-এই বিভাগে এমন প্রশ্ন রয়েছে যা উত্তর থেকে বেশি সময় ধরে টিকে ছিল, অপ্রত্যাশিত ধারণা, এবং মানুষ, সময়, অস্তিত্ব, বিশ্বাস, ব্যর্থতা, আশা, উচ্চাকাঙ্ক্ষা, এবং মানুষ হওয়ার অদ্ভুত কার্যপ্রণালী সম্পর্কে পর্যবেক্ষণ। 🌍
-
-কিছু চিন্তা হয়তো একদিন লেখা হয়ে উঠবে। কিছু ঠিক যা আছে তাই থাকবে:
-
-<div align="center">
-
-**চিন্তা।**
-
-</div>
-
-<br/>
-
-### 🕰️ স্মৃতি 🕰️
-
-স্মৃতি একটি অবিশ্বস্ত সংরক্ষণকারী। এটি বিবরণ ভুলে যায়, রং পরিবর্তন করে, কথোপকথন পুনর্বিন্যাস করে, এবং কখনও কখনও তুচ্ছ কিছু সংরক্ষণ করে যখন গুরুত্বপূর্ণ কিছু হারিয়ে যেতে দেয়। 🧠🌫️
-
-এই বিভাগে যা এখনও মনে আছে তা ধারণ করে—যদিও সঠিকভাবে নয়, সৎভাবে। 🤍
-
-<br/>
-
-### 🧩 খণ্ডাংশ 🧩
-
-প্রতিটি বাক্য সম্পূর্ণ লেখা হওয়ার যোগ্য নয়, এবং প্রতিটি ধারণা একটি গল্প হওয়ার মতো যথেষ্ট সময় টিকে থাকে না। 🌱
-
-এখানেই অসমাপ্ত জিনিসগুলো চাপ ছাড়াই থাকতে পারে:
-
-- অর্ধ-লেখা অনুচ্ছেদ ✍️
-- এক-লাইনের চিন্তা 💬
-- গল্প ছাড়া শিরোনাম 🏷️
-- সমাপ্তি ছাড়া গল্প 📖
-- শব্দ যা একদিন কিছু হতে পারে—বা চিরকাল খণ্ডাংশ হয়ে থাকতে পারে 🪶
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🗺️ মানচিত্রহীন একটি সময়রেখা 🗺️
-
-এই ভাণ্ডার একই ব্যক্তির বিভিন্ন সংস্করণ বিস্তৃত করতে পারে:
-
-| | |
-|:--|:--|
-| আশাবাদী সংস্করণ | 🌞 |
-| বিভ্রান্ত সংস্করণ | 🌫️ |
-| উচ্চাকাঙ্ক্ষী সংস্করণ | 🚀 |
-| ক্লান্ত সংস্করণ | 😮‍💨 |
-| কৌতূহলী সংস্করণ | 🔍 |
-| যে সংস্করণ ভেবেছিল সবকিছু সমাধান হয়ে গেছে | 🧩 |
-| যে সংস্করণ শেষে বুঝেছিল তা হয়নি | 🌌 |
-
-সামঞ্জস্যের কোনো প্রয়োজন নেই। ভাণ্ডার নিজের সাথে দ্বন্দ্ব করতে পারে কারণ ভেতর থেকে দেখলে বৃদ্ধি খুব কমই সামঞ্জস্যপূর্ণ দেখায়। 🌱
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🔒 গোপনীয়তা 🔒
-
-এই সংগ্রহটি ইচ্ছাকৃতভাবে ব্যক্তিগত। 🤫
-
-কিছু লেখায় ব্যক্তিগত স্মৃতি, ব্যক্তিগত প্রতিফলন, নাম, কথোপকথন, বা চিন্তা থাকতে পারে যা কখনো প্রকাশ্যে খাওয়ার জন্য নয়। 🫂
-
-ব্যক্তিগত মানে নিষ্পত্তিযোগ্য নয়। এর মানে সুরক্ষিত। 🛡️
-
-যদি এই সংগ্রহটি কখনো শেয়ার করা হয়, প্রকাশিত হয়, বা অন্য কোনো মাধ্যমে রূপান্তরিত হয়, তবে এর মধ্যে উল্লিখিত ব্যক্তিদের মূল প্রসঙ্গ এবং গোপনীয়তা সযত্নে বিবেচনা করা উচিত। ⚖️
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🧭 ভাণ্ডারের নীতিমালা 🧭
-
-<div align="center">
-
-| নীতি | |
-|:--|:--:|
-| সৎভাবে লেখো। | ✍️ |
-| নীরবে সংরক্ষণ করো। | 🤫 |
-| সযত্নে সম্পাদনা করো। | 🛠️ |
-| গুরুত্বপূর্ণ কিছু ভুলো না। | 🧠 |
-| অসমাপ্ত কিছুতে জোর করো না। | 🌱 |
-| দ্বন্দ্ব থাকতে দাও। | 🔄 |
-| যা গুরুত্বপূর্ণ তা রাখো। | 🤍 |
-
-</div>
-
-কোনো প্রকাশের সময়সূচি, শব্দ সংখ্যা, বা শেষ করার প্রত্যাশা নেই। কোনো লেখাকে সুন্দর হতে হবে না। একটি পৃষ্ঠা শুধু থাকতে পারে। 📄
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🕯️ নিখুঁত ভাণ্ডার নয় 🕯️
-
-এটি প্রতিটি মুহূর্ত সংরক্ষণের চেষ্টা নয়। এটি কিছু মুহূর্ত সংরক্ষণের চেষ্টা যা গুরুত্বপূর্ণ ছিল। ✨
-
-হারিয়ে যাওয়া বছর, অসমাপ্ত গল্প, ভুল স্মৃতি, এবং এমন পৃষ্ঠা থাকবে যা শুধু লেখকের কাছেই বোধগম্য। 🗓️
-
-এটা ঠিক আছে। 🤍
-
-একটি ভাণ্ডারকে সবকিছু ব্যাখ্যা করার প্রয়োজন নেই। এটিকে শুধু মনে রাখতে হবে। 🧠
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🌌 কেন “Echoes of a Wanderer”? 🌌
-
-কারণ সম্ভবত জীবনের বেশিরভাগ অংশই পিছনে ফিরে তাকালে এটাই হয়ে ওঠে। 🛤️
-
-আমরা স্থানের মধ্য দিয়ে চলি। মানুষের সাথে দেখা করি। মানুষ হারাই। জিনিস তৈরি করি, ভাঙি, শিখি, ভুলি, এবং আবার শুরু করি। 🔄
-
-শেষে যা থাকে তা হল প্রতিধ্বনি:
-
-<div align="center">
-
-> কেউ একবার বলে যাওয়া একটি বাক্য 💬
-> একটি রাত যা কিছু বদলে দিয়েছিল 🌙
-> একটি স্বপ্ন যা কখনো হয়নি 💭
-> একটি চিঠি যা কখনো পাঠানো হয়নি ✉️
-> আমাদের একটি সংস্করণ যা আর নেই 🪞
-
-</div>
-
-এই ভাণ্ডার সেই প্রতিধ্বনিগুলোর জন্য একটি জায়গা। 🌫️
-
-<br/>
-
-<div align="center">
-
-**সবকিছুর বেঁচে থাকার প্রয়োজন নেই।**
-**কিন্তু কিছু জিনিস মনে রাখার যোগ্য।** 🕯️
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 👤 লেখক সম্পর্কে 👤
-
-<div align="center">
-
-সময়ের মধ্য দিয়ে চলমান একজন পথিক দ্বারা লেখা ও রক্ষণাবেক্ষণ করা। ⏳
-
-| | |
-|:--|:--|
-| পেশায় একজন সফটওয়্যার ইঞ্জিনিয়ার। | 💻 |
-| পরিস্থিতিতে চিন্তার সংগ্রাহক। | 🧠 |
-| প্রয়োজনে জীবনের ছাত্র। | 🌱 |
-
-এখনও শিখছি। 📚
-এখনও প্রশ্ন করছি। ❓
-এখনও লিখছি। ✍️
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🌅 সমাপ্তি 🌅
-
-সম্ভবত একদিন এই পৃষ্ঠাগুলো ইন্টারনেটের ইতিহাসে কোথাও নীরবে পড়ে থাকা একটি পুরনো ভাণ্ডার ছাড়া আর কিছুই থাকবে না। 🌐
-
-সম্ভবত কেউ কখনো এগুলো পড়বে না। 👀
-
-এটা পুরোপুরি ঠিক আছে। 🤍
-
-এগুলো কখনো লেখা হয়নি কারণ এগুলোর একটি দর্শক প্রয়োজন ছিল। এগুলো লেখা হয়েছিল কারণ, সময়ের একটি মুহূর্তে, কারো শব্দগুলো রাখার জন্য একটি জায়গা প্রয়োজন ছিল। 🫀📝
-
-এবং এখন তাদের একটি জায়গা আছে। 📍
-
-**এখানে।**
-
-<div align="center">
-
-> *«অনন্তকালের কাছে নোট, যে চিঠিগুলো কখনো পাঠাইনি। ✉️»*
-
-**— এক মহাজাগতিক মুসাফির**
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:302b63,50:6d5acf,100:302b63&height=3&width=100%25" width="70%" />
-</div>
-
-<br/>
-
-## 🗒️ টীকা
-
-সম্ভবত একটি ভাণ্ডার শেষ পর্যন্ত এটাই করতে পারে: বিস্মৃতির নীরব কাজের বিরুদ্ধে কয়েকটি ভঙ্গুর চিহ্ন ধরে রাখা। 🕯️ নিখুঁতভাবে নয়, সম্পূর্ণভাবে নয়, এবং চিরকালের জন্য নয়—কিন্তু যথেষ্ট দীর্ঘ সময়ের জন্য এই বলতে যে, এই মুহূর্তগুলো ঘটেছিল, তারা গুরুত্বপূর্ণ ছিল, এবং কেউ এখানে ছিল তাদের মনে রাখতে। 🌌
-
-পৃষ্ঠাগুলো অসমাপ্ত থাকতে পারে। স্মৃতি পরিবর্তিত হতে পারে। যে ব্যক্তি তাদের কাছে ফিরে আসে সে আর তাদের লেখক নাও হতে পারে। তবুও, প্রতিটি খণ্ডাংশ একই যাত্রার অংশ: একটি জীবন এগিয়ে চলছে, পিছনে প্রতিধ্বনি রেখে। 🚶‍♂️🌫️
-
-এবং যদি এই শব্দগুলো একদিন বেঁচে থাকার একটি নীরব রেকর্ড ছাড়া আর কিছু না হয়, তবে তারা তাদের উদ্দেশ্য পূরণ করেছে। 🤍
-
-<div align="center">
-
-**কিছু জিনিস পাঠানোর জন্য নয়।** ✉️
-**কিছু জিনিস শুধু থেকে যাওয়ার জন্য।** 🕯️
-
-**— Mr.0x1nj3ct04** ☠️
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&size=20&duration=4000&pause=1000&color=8B7BD8&center=true&vCenter=true&width=560&lines=Write+honestly.+Preserve+quietly.;Let+contradictions+exist.;Keep+what+matters." alt="Typing SVG" />
-</a>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=140&section=footer&text=still%20writing.%20%E2%9C%8D%EF%B8%8F&fontSize=20&fontColor=b8a6ff&animation=fadeIn&fontAlignY=72" width="100%" />
-
-</div>
+আজ লিখলাম, আমি খুশি।
+কাল লিখব, আমি দুঃখী।
+দুটোই সত্যি। দুটোই আমার।
 
 </details>
+
+<details>
+<summary><strong>তিন · স্মৃতি</strong> — <em>যে সাক্ষী সব মনে রাখে না</em></summary>
+
+একটা কথা ভাবি।
+
+জীবনের কোনো একটা সময়ে আমি খুব কষ্ট পেয়েছিলাম। কী কারণে, মনে নেই। সেই সময়টা মনে আছে। সেই ব্যথাটা মনে আছে। কিন্তু কেন ব্যথা পেয়েছিলাম, সেই কথাটা হারিয়ে গেছে।
+
+এটা কী অদ্ভুত না?
+
+মনে হয়, স্মৃতি একটা ফাইলিং কেবিনেটের মতো। একজন বোকা কর্মচারী বসানো আছে। সে যা রাখতে চায়, রাখে। যা রাখতে চায় না, ফেলে দেয়। কিন্তু ফাইলটা থেকে যায়। শুধু আমরা আর দেখতে পাই না।
+
+এই অধ্যায়ের স্মৃতিগুলো ইতিহাস না। এগুলো একজন বোকা কর্মচারীর আঁকা মানচিত্র। ভুল ভুল জায়গা। তবু কিছু জায়গা ঠিকঠাক।
+
+মানুষ বড় হলে স্মৃতি নিয়ে একটু মিথ্যে বলে। এটা দোষ না। কারণ আমরা যেমন ছিলাম, তেমন আর নেই। সেই মানুষটাকে বাঁচিয়ে রাখার একটাই উপায় — তার সম্পর্কে একটু মিথ্যে বলা।
+
+</details>
+
+<details>
+<summary><strong>চার · কবিতা</strong> — <em>কয়েকটা শব্দের আশ্রয়</em></summary>
+
+কবিতা লেখা যায় না।
+
+এই কথাটা অনেকে বলে, আমি বিশ্বাস করি না। কবিতা লেখা যায় না মানে কী? লিখলে তো হয়। হয়তো ভালো না, খারাপ — সেটা পাঠক ঠিক করবে।
+
+কবিতা কীভাবে আসে? আমার জানামতে ধরা দেয় না। একটা বাক্য হঠাৎ মাথায় আসে — "আমার একটা বালিশ আছে।" এটা কবিতা না। কিন্তু "আমার একটা বালিশ আছে, যার গন্ধ তোমার মতো" — এটা হয়তো কবিতা।
+
+পার্থক্যটা কোথায়? একটা বাক্যে অন্যটা নেই। তবু আমরা বুঝি। ভাষার একটা জাদু আছে — যা ব্যাখ্যা করা যায় না, শুধু অনুভব করা যায়।
+
+এই অধ্যায়ের বাক্যগুলো সেই। যেগুলো ব্যাখ্যা করতে পারি না, কিন্তু রেখে দেওয়া দরকার।
+
+</details>
+
+<details>
+<summary><strong>পাঁচ · খণ্ডাংশ</strong> — <em>যা শেষ হতে পারেনি</em></summary>
+
+আমার একটা বদভ্যাস আছে।
+
+অনেক কাজ শুরু করি, শেষ করি না। বই পড়তে পড়তে থেমে যাই, অর্ধেক পাতা দাগানো। একটা গল্পের শুরু করেছি, খাতা হারিয়ে গেছে। একটা কবিতা মাথায় এসেছিল, ঘুমিয়ে পড়েছি, পরদিন ভুলে গেছি।
+
+এগুলো নিয়ে কোনো দুঃখ নেই।
+
+সবকিছুর শেষ থাকতেই হবে — এটা কার কথা? নিয়মটা কে লিখেছে? কোনো বইয়ে নেই যে সব কাজ শেষ করতে হবে। কিছু জিনিস না শেষ হয়েই সুন্দর। একটা অসমাপ্ত গল্প পড়তে পড়তে থেমে গেলে অনেক সময় বেশি ভালো লাগে। কারণ তখন পাঠক নিজের মতো শেষটা ভেবে নিতে পারে।
+
+এই অধ্যায়ের খণ্ডাংশগুলো সেই। তোমার যা ইচ্ছা ভেবে নাও।
+
+</details>
+
+<details>
+<summary><strong>ছয় · চিন্তা</strong> — <em>যে প্রশ্নের শেষ নেই</em></summary>
+
+মানুষ কেন বাঁচে?
+
+এই প্রশ্নটা আমি করি না। কারণ এই প্রশ্নের উত্তর জানা কোনো কাজে আসে না। জানলেও মানুষ বাঁচে। জানলেও মরে।
+
+কিন্তু আমরা প্রশ্ন করি। কারণ মানুষ প্রশ্ন করতে ভালোবাসে — উত্তর পেতে নয়, প্রশ্নের সৌন্দর্য পেতে। একটা ভালো প্রশ্ন একটা ভালো উত্তর থেকে অনেক বেশি মূল্যবান।
+
+এই অধ্যায়ের চিন্তাগুলো তেমন। কিছু প্রশ্নের উত্তর খোঁজা হয়েছে। কিছু প্রশ্নকে প্রশ্ন হিসেবেই থাকতে দেওয়া হয়েছে।
+
+কারণ সব প্রশ্নের উত্তর পেলে পৃথিবীটা খুব বিরক্তিকর হয়ে যেত। যা অজানা, সেটাই আকর্ষণীয়।
+
+</details>
+
+<details>
+<summary><strong>সাত · প্রতিধ্বনি</strong> — <em>পেছনে পড়ে থাকা</em></summary>
+
+কিছু মানুষ চলে গেলে শুধু মানুষটা যায় না। একটা গন্ধ যায়। একটা বিকেল যায়। একটা দরজার শব্দ যায়। একটা চায়ের কাপ যায়।
+
+আমার এক বন্ধু ছিল। কলেজে পড়তাম। সে খুব হাসত। অকারণ হাসত। একটা বেঞ্চে বসতাম, চা খেতাম, কথা বলতাম। তারপর সে অন্য শহরে চলে গেল। এখন কোথায়, জানি না।
+
+কিন্তু আজও যখন কোনো বেঞ্চ দেখি, মনে হয় কেউ পাশে বসে আছে। কেউ হাসছে। কেউ কিছু বলছে।
+
+এই হলো প্রতিধ্বনি। মানুষের কথা নয় — মানুষের অনুপস্থিতির শব্দ।
+
+কোনো কোনো প্রতিধ্বনি সারা জীবন থাকে। ভালো না খারাপ, জানি না।
+
+</details>
+
+<details>
+<summary><strong>আট · শেষ কথা</strong> — <em>প্রিয় মহাকাল</em></summary>
+
+প্রিয় মহাকাল।
+
+তোমাকে শেষ চিঠিটা লিখছি। এই চিঠিতে নতুন কিছু নেই। আগেই সব বলা হয়ে গেছে। তবু লেখা দরকার — কারণ শেষ কথাটা সবসময় আলাদা।
+
+তুমি আমার চিঠিগুলো পড়েছ কিনা, জানি না। উত্তর দাওনি। আমি অপেক্ষা করিনি। এটা ঠিক। কিন্তু এই অপেক্ষা না করার ভেতরে একটা অপেক্ষা ছিল — যেটা আমি নিজেও জানতাম না।
+
+হয়তো একদিন এই পাতাগুলো ইন্টারনেটের কোনো কোণে পড়ে থাকবে। কেউ আসবে না। কেউ পড়বে না। সেটাও ঠিক।
+
+কিন্তু যদি কেউ আসে? যদি কেউ থামে? যদি কেউ একটা বাক্য পড়ে কিছুক্ষণ চুপ করে থাকে?
+
+তাহলে মনে হবে — লেখাটা বৃথা যায়নি।
+
+সব গল্পের পাঠক লাগে না। কিন্তু একজন পাঠক থাকলেই গল্পটা গল্প হয়ে ওঠে।
+
+তুমি যদি এখানকার শেষ বাক্যটা পড়ে থাকো — ধন্যবাদ।
+
+</details>
+
+---
+
+## শেষের কথা
+
+এই আর্কাইভটা একটা খাতার মতো।
+
+কিছু লেখা আছে। কিছু নেই। কিছু অর্ধেক। কিছু হারিয়ে গেছে। তাতে কিছু যায় আসে না।
+
+আমি চাই না এটা কেউ পড়ুক। আমি চাই এটা থেকে যাক। একটা পুরোনো খাতা আলমারির কোণায় পড়ে থাকলে কী হয়? কিছু হয় না। কিন্তু কেউ একদিন খুলে দেখলে একটা সময় বেরিয়ে আসে। একটা গন্ধ বেরিয়ে আসে।
+
+সেই গন্ধটা যদি কারো নাকে লাগে — আমার কাজ শেষ।
+
+<details>
+<summary>কীভাবে তৈরি</summary>
+
+- **ভাষা** — বাংলা
+- **হোস্টিং** — [Cloudflare Workers](https://dairy.shaonkabir98.workers.dev/)
+- **থিম** — ডার্ক, হালকা, পাঠযোগ্য
+- **উদ্দেশ্য** — কোনোটা নেই। শুধু লেখা হয়ে থাকা।
+
+</details>
+
+---
+
+<p align="center"><sub>কেউ একজন হেঁটে গিয়েছিল।</sub><br><sub>থেমেছিল।</sub><br><sub>লিখে গিয়েছিল।</sub></p>
+
+<p align="center"><em>🌌</em></p>
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=shaonkabir98&label=visitors&color=A78BFA&style=for-the-badge" alt="visitor counter" />
+  <img src="https://img.shields.io/badge/read-with%20patience-8B5CF6?style=for-the-badge&logo=bookstack&logoColor=white" alt="read" />
+</p>
+
+<p align="center"><a href="#-echoes-of-a-wonderer">⬆ back to top</a></p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,3,6,12,20&height=120&section=footer&animation=twinkling" width="100%" />
+</p>
