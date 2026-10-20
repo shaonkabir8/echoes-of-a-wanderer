@@ -1,0 +1,147 @@
+name: "🧪 Testing"
+description: "Report testing gaps, unreliable tests, or opportunities to improve test coverage."
+title: "🧪 test: "
+labels:
+  - testing
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧪 Testing Proposal
+
+        Use this template to report missing test coverage, unreliable tests, testing infrastructure problems, or opportunities to improve the project's testing strategy.
+
+        **Before submitting:**
+        - 🔎 Search existing issues for similar reports.
+        - 📚 Review existing tests and testing guidelines.
+        - 🎯 Identify the behavior or scenario that needs better verification.
+
+        > 💡 Report unexpected application behavior through the Bug Report template. Use this template when the primary concern is testing or test coverage.
+
+  - type: dropdown
+    id: testing_category
+    attributes:
+      label: "📂 Testing Category"
+      description: "What type of testing improvement is needed?"
+      options:
+        - "Missing test coverage"
+        - "Unit testing"
+        - "Integration testing"
+        - "End-to-end testing"
+        - "Regression testing"
+        - "Test reliability or flaky tests"
+        - "Test infrastructure or configuration"
+        - "Performance or load testing"
+        - "Accessibility testing"
+        - "Security testing"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected_area
+    attributes:
+      label: "📍 Affected Components"
+      description: "Identify the functionality, modules, files, or workflows involved."
+      placeholder: |
+        - Component or module:
+        - Relevant file paths:
+        - Existing test files:
+        - Related workflows:
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_coverage
+    attributes:
+      label: "🔍 Current Testing Situation"
+      description: "Explain what is currently tested and identify the limitation."
+      placeholder: |
+        What tests currently exist?
+        Which scenarios are missing, unreliable, or insufficiently verified?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_tests
+    attributes:
+      label: "💡 Proposed Testing Improvements"
+      description: "Describe the additional tests or testing changes you recommend."
+      placeholder: |
+        Which scenarios should be tested?
+        What inputs, conditions, or edge cases should be covered?
+        What should the tests verify?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "🔄 Reproduction Steps"
+      description: "For unreliable or failing tests, provide steps to reproduce the problem."
+      placeholder: |
+        1. Set up the required test environment.
+        2. Run the relevant test command.
+        3. Observe the failure or inconsistent result.
+
+        Include relevant commands and error messages when available.
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected_results
+    attributes:
+      label: "✅ Expected Results"
+      description: "Explain what successful test execution or improved coverage should demonstrate."
+      placeholder: |
+        What behavior should be verified?
+        What result would confirm that the test is working correctly?
+        Are there specific acceptance criteria?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "🖥️ Test Environment"
+      description: "Provide relevant environment and tooling details when applicable."
+      placeholder: |
+        - Operating system:
+        - Runtime or framework version:
+        - Testing framework:
+        - Relevant dependencies:
+        - Test command:
+        - CI environment (if applicable):
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "🔗 Additional Context"
+      description: "Provide relevant references, logs, or supporting information."
+      placeholder: |
+        Related issues or pull requests:
+        Relevant documentation:
+        Sanitized logs or error messages:
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✅ Submission Checklist"
+      description: "Confirm the following before submitting."
+      options:
+        - label: "I have searched existing issues for similar testing proposals."
+          required: true
+        - label: "I have identified the affected functionality or testing area."
+          required: true
+        - label: "I have described the testing gap or problem clearly."
+          required: true
+        - label: "I have included reproduction steps or relevant commands where applicable."
+          required: false
+        - label: "I have removed credentials, secrets, and sensitive information from any supplied logs."
+          required:
