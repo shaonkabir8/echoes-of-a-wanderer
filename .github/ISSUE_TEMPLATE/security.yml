@@ -1,0 +1,47 @@
+name: "🔒 Security Vulnerability"
+description: "Learn how to report security vulnerabilities privately and responsibly."
+title: "[Security] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔒 Security Vulnerability Reporting
+
+        **Please do not disclose security vulnerabilities through public issues.**
+
+        Public reports may expose users, systems, or sensitive information to unnecessary risk.
+
+        ### 🛡️ How to Report a Vulnerability
+
+        1. Visit the repository's **Security** tab.
+        2. Look for **Report a vulnerability** to access the private vulnerability reporting mechanism, if enabled.
+        3. Follow the instructions provided by the repository.
+
+        **If private vulnerability reporting is unavailable:**
+        Contact the repository maintainers through an established private communication channel, such as a published security contact or an official organizational contact.
+
+        Do not publish vulnerability details until the maintainers have established an appropriate disclosure process.
+
+        ### 🚫 Never Include
+        - Passwords, access tokens, API keys, or other secrets.
+        - Sensitive personal or production data.
+        - Exploit instructions or vulnerability details in this public form.
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: "✅ Acknowledgement"
+      description: "Confirm that you understand the reporting instructions."
+      options:
+        - label: "I understand that security vulnerabilities must be reported privately rather than disclosed through a public issue."
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        🙏 **Thank you for helping keep this project and its users secure.**
+
+        Responsible disclosure gives maintainers an opportunity to investigate and address security concerns while reducing unnecessary exposure.
