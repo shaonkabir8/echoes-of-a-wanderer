@@ -1,0 +1,131 @@
+name: 🐛 Bug Report
+description: Report a technical issue in the frontend, API, or database.
+title: "[BUG] "
+labels:
+  - bug
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please provide accurate details to help us reproduce, investigate, and resolve the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🐛 Description
+      description: Provide a clear and concise description of the bug.
+      placeholder: Describe the issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 🎯 Expected Behaviour
+      description: What did you expect to happen?
+      placeholder: Describe the expected behaviour...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: ⚠️ Actual Behaviour
+      description: What actually happened? Include error messages or stack traces if available.
+      placeholder: Describe the actual behaviour...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: Provide clear, sequential steps to reproduce the issue.
+      placeholder: |
+        1. Navigate to...
+        2. Perform...
+        3. Observe...
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected_area
+    attributes:
+      label: 🖥️ Affected Area
+      description: Which component is affected?
+      options:
+        - Frontend (artifacts/echoes-of-a-wanderer)
+        - API (api-server)
+        - Database
+        - Authentication / Authorization
+        - Deployment / Infrastructure
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: browser_os
+    attributes:
+      label: 🌐 Browser & Operating System
+      description: Required only when relevant to the issue.
+      placeholder: "e.g., Firefox 129 on Windows 11"
+
+  - type: input
+    id: endpoint_route
+    attributes:
+      label: 🔗 Endpoint / Route
+      description: Specify the affected API endpoint or application route, if applicable.
+      placeholder: "e.g., GET /api/writings"
+
+  - type: input
+    id: commit_version
+    attributes:
+      label: 🏷️ Commit / Version
+      description: Specify the affected commit hash or application version, if known.
+      placeholder: "e.g., a1b2c3d"
+
+  - type: dropdown
+    id: deployment_environment
+    attributes:
+      label: 🚀 Deployment Environment
+      description: Where did the issue occur?
+      options:
+        - Local
+        - Staging
+        - Production
+        - Other / Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots_logs
+    attributes:
+      label: 📸 Screenshots / Logs
+      description: Attach screenshots or provide relevant console output, API responses, and server logs.
+      placeholder: Include diagnostic information, if available.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 🧩 Additional Context
+      description: Include related issues, recent changes, or other information that may help diagnose the problem.
+      placeholder: Add any relevant context...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Checklist
+      description: Confirm the following before submitting.
+      options:
+        - label: I have searched existing issues to avoid duplicates.
+          required: true
+        - label: I have provided enough detail to reproduce the problem.
+          required: true
+        - label: I have included relevant environment details where applicable.
+          required: true
