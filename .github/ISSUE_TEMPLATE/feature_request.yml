@@ -1,0 +1,69 @@
+name: "✨ Feature Request"
+description: "Suggest new functionality or an improvement for the site or CMS."
+title: "[FEATURE] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest a feature or improvement for the project. Please describe the problem it solves and the solution you have in mind.
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: "🎯 Problem Statement"
+      description: "What problem does this feature solve? Why is it needed?"
+      placeholder: "Describe the problem or user need..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: "💡 Proposed Solution"
+      description: "Describe the functionality or improvement you would like."
+      placeholder: "Explain your proposed solution..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: area_affected
+    attributes:
+      label: "📍 Area Affected"
+      description: "Select all areas relevant to this request."
+      options:
+        - label: "Frontend / UI (`artifacts/echoes-of-a-wanderer`)"
+        - label: "API (`api-server`)"
+        - label: "Database / Schema"
+        - label: "Authoring / CMS workflow"
+        - label: "Deployment / Tooling"
+        - label: "Other"
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "🔄 Alternatives Considered"
+      description: "Have you considered alternative solutions or approaches?"
+      placeholder: "Describe any alternatives, if applicable..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "📎 Additional Context"
+      description: "Include mockups, references, related issues, or useful links."
+      placeholder: "Add any relevant context here..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✅ Checklist"
+      options:
+        - label: "I have searched existing issues to avoid duplicates."
+          required: true
+        - label: "This request is within the scope of the project."
+          required: true
