@@ -1,0 +1,128 @@
+name: "🔧 Enhancement"
+description: "Suggest improvements to existing functionality."
+title: "🔧 enhancement: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔧 Enhancement Proposal
+
+        Use this template to suggest meaningful improvements to existing functionality, workflows, or user experiences.
+
+        **Before submitting:**
+        - 🔎 Search existing issues to avoid duplicates.
+        - 📖 Review relevant documentation and contribution guidelines.
+        - 🎯 Consider the problem your proposed improvement would solve.
+
+        > 💡 **Note:** Use the Feature Request template for entirely new capabilities. Use this template when improving something that already exists.
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: "📌 Current Behavior"
+      description: "Describe the existing functionality and how it currently works."
+      placeholder: |
+        What does the current implementation do?
+        Which component, workflow, or behavior needs improvement?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "🎯 Problem or Limitation"
+      description: "Explain what is inefficient, confusing, inconvenient, or otherwise problematic."
+      placeholder: |
+        What limitation have you encountered?
+        How does it affect users, contributors, or maintainers?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_improvement
+    attributes:
+      label: "💡 Proposed Improvement"
+      description: "Describe the specific changes you recommend."
+      placeholder: |
+        What should be improved?
+        How should the existing functionality behave after the change?
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: "✨ Expected Benefits"
+      description: "Explain how this improvement would make the project better."
+      placeholder: |
+        - Improved usability, reliability, or maintainability
+        - Reduced complexity or unnecessary steps
+        - Better consistency or developer experience
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "🔄 Alternatives Considered"
+      description: "Describe any alternative approaches you have considered, if applicable."
+      placeholder: |
+        Are there other ways to address this problem?
+        Why would your proposed approach be preferable?
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "⚙️ Scope and Potential Impact"
+      description: "Identify affected components, workflows, or users and any potential compatibility concerns."
+      placeholder: |
+        - Affected components or modules:
+        - Potential breaking changes:
+        - Compatibility or migration considerations:
+      render: markdown
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "🚦 Suggested Priority"
+      description: "How important is this improvement from your perspective?"
+      options:
+        - "Low — Minor quality-of-life improvement"
+        - "Medium — Meaningful usability or maintainability improvement"
+        - "High — Significant impact on existing functionality"
+        - "Critical — Existing functionality is severely limited"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✅ Submission Checklist"
+      description: "Confirm that your proposal meets the following requirements."
+      options:
+        - label: "I have searched existing issues for similar enhancement proposals."
+          required: true
+        - label: "This proposal improves existing functionality rather than introducing an entirely new feature."
+          required: true
+        - label: "I have clearly described the problem and proposed improvement."
+          required: true
+        - label: "I have reviewed the relevant documentation, where applicable."
+          required: false
+        - label: "I am willing to provide additional information or contribute to the implementation."
+          required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        🙌 **Thank you for helping improve this project!**
+
+        Your feedback helps maintainers prioritize meaningful improvements and deliver a better experience for everyone.

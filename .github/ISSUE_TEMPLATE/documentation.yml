@@ -1,0 +1,108 @@
+name: "📚 Documentation"
+description: "Report documentation issues or suggest improvements to existing documentation."
+title: "📚 docs: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Documentation Proposal
+
+        Use this template to report inaccurate, outdated, incomplete, or unclear documentation, or to suggest improvements to existing documentation.
+
+        **Before submitting:**
+        - 🔎 Search existing issues to avoid duplicates.
+        - 📖 Review the relevant documentation.
+        - 🎯 Clearly identify what needs to be corrected or improved.
+
+        > 💡 Use the Feature Request template for entirely new product capabilities.
+
+  - type: dropdown
+    id: documentation_type
+    attributes:
+      label: "🗂️ Documentation Category"
+      description: "Which type of documentation needs attention?"
+      options:
+        - "Bug or incorrect information"
+        - "Missing or incomplete content"
+        - "Outdated instructions"
+        - "Unclear explanation"
+        - "Broken links or formatting"
+        - "Code examples or tutorials"
+        - "API or technical reference"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: "📍 Documentation Location"
+      description: "Provide the URL, file path, section, or heading."
+      placeholder: |
+        File path or URL:
+        Section or heading:
+        Relevant line numbers (if applicable):
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "❗ Problem Description"
+      description: "Explain what is incorrect, missing, outdated, or difficult to understand."
+      placeholder: |
+        What is the documentation issue?
+        How does it affect readers or contributors?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_changes
+    attributes:
+      label: "💡 Proposed Changes"
+      description: "Describe the corrections or improvements you recommend."
+      placeholder: |
+        What should be corrected, added, removed, or clarified?
+        Include suggested wording or examples if helpful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: supporting_context
+    attributes:
+      label: "🔗 Supporting Context"
+      description: "Provide relevant references or examples, if available."
+      placeholder: |
+        Related documentation:
+        Relevant source code:
+        Example of the expected behavior:
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✅ Submission Checklist"
+      description: "Confirm the following before submitting."
+      options:
+        - label: "I have searched existing issues for similar documentation reports."
+          required: true
+        - label: "I have identified the relevant documentation location."
+          required: true
+        - label: "I have clearly described the issue and suggested an improvement."
+          required: true
+        - label: "I have verified the information provided, where applicable."
+          required: false
+        - label: "I am willing to contribute documentation changes."
+          required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        🙌 **Thank you for helping improve the project's documentation!**
+
+        Clear, accurate documentation makes the project easier to understand, use, and maintain.

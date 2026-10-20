@@ -1,0 +1,145 @@
+name: "♻️ Refactoring"
+description: "Propose code restructuring to improve maintainability, readability, and architecture without changing intended behavior."
+title: "♻️ refactor: "
+labels:
+  - refactoring
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ♻️ Refactoring Proposal
+
+        Use this template to propose restructuring existing code to improve readability, maintainability, consistency, or architectural quality without intentionally changing externally observable behavior.
+
+        **Before submitting:**
+        - 🔎 Search existing issues for duplicate proposals.
+        - 📖 Review relevant code and project conventions.
+        - 🎯 Identify the current design problem and the expected improvement.
+
+        > 💡 Use the Enhancement template for general improvements to existing functionality and the Feature Request template for new capabilities.
+
+  - type: textarea
+    id: affected_area
+    attributes:
+      label: "📍 Affected Code or Components"
+      description: "Identify the files, modules, services, or components involved."
+      placeholder: |
+        - File paths or modules:
+        - Relevant functions or classes:
+        - Related components:
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_structure
+    attributes:
+      label: "🔍 Current Implementation"
+      description: "Describe the existing code structure and its limitations."
+      placeholder: |
+        How is the code currently organized?
+        What makes the implementation difficult to understand, maintain, or extend?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "🎯 Motivation and Problem"
+      description: "Explain why refactoring is needed and what problems it would address."
+      placeholder: |
+        - Code duplication:
+        - Excessive complexity:
+        - Tight coupling:
+        - Poor separation of concerns:
+        - Other maintainability concerns:
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_approach
+    attributes:
+      label: "💡 Proposed Refactoring"
+      description: "Describe the suggested restructuring without requiring a complete implementation plan."
+      placeholder: |
+        What should be reorganized, extracted, simplified, or consolidated?
+        What design or architectural improvements do you recommend?
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior_preservation
+    attributes:
+      label: "🛡️ Behavior and Compatibility"
+      description: "Explain how existing behavior, interfaces, and integrations should be preserved."
+      placeholder: |
+        - Existing behavior that must remain unchanged:
+        - Public APIs or interfaces affected:
+        - Backward-compatibility considerations:
+        - Potential migration requirements:
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: "🧪 Testing and Verification"
+      description: "Describe how the refactoring can be verified safely."
+      placeholder: |
+        - Existing tests to run:
+        - Additional regression tests needed:
+        - Static analysis or linting checks:
+        - Other verification requirements:
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "🔄 Alternatives Considered"
+      description: "Describe alternative approaches, if applicable."
+      placeholder: |
+        What other approaches could address this problem?
+        Why might the proposed approach be preferable?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: "📦 Estimated Scope"
+      description: "Select the approximate scope of the proposed refactoring."
+      options:
+        - "Small — Limited to a function, class, or file"
+        - "Medium — Affects multiple files or a single module"
+        - "Large — Spans multiple modules or architectural boundaries"
+        - "Uncertain — Requires further investigation"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✅ Submission Checklist"
+      description: "Confirm the following before submitting."
+      options:
+        - label: "I have searched existing issues for similar refactoring proposals."
+          required: true
+        - label: "I have identified the affected code or components."
+          required: true
+        - label: "I have explained the maintainability problem and proposed improvement."
+          required: true
+        - label: "I understand that existing behavior should remain unchanged unless explicitly discussed and approved."
+          required: true
+        - label: "I have considered testing and backward compatibility."
+          required: false
+        - label: "I am willing to contribute to the implementation."
+          required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        🙌 **Thank you for helping improve the codebase!**
+
+        Well-planned refactoring reduces technical debt and makes future development safer and more efficient.
