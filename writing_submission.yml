@@ -1,0 +1,110 @@
+name: "✍️ Writing Submission"
+description: "Propose a new writing topic for the personal literary archive."
+title: "[WRITING] "
+labels:
+  - writing
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✍️ Writing Submission
+
+        Use this form to propose a new writing topic for the personal literary archive.
+
+        The information provided here will serve as the reference for preparing
+        and reviewing the corresponding Markdown document.
+
+        **Workflow:** Issue → Writing → Pull Request → Validation → Merge
+
+  - type: input
+    id: topic
+    attributes:
+      label: "📌 Topic / Subject of Writing"
+      description: "Provide the title or central subject of the proposed writing."
+      placeholder: "e.g., জীবনের গল্প"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "📚 Category"
+      description: "Select the category that best represents the writing."
+      options:
+        - Letter
+        - Diary
+        - Poem
+        - Thoughts
+        - Random
+        - Undefined
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: visibility
+    attributes:
+      label: "🔐 Visibility"
+      description: "Choose the intended visibility of the writing."
+      options:
+        - Public
+        - Private
+    validations:
+      required: true
+
+  - type: textarea
+    id: short_details
+    attributes:
+      label: "📝 Short Details"
+      description: "Briefly describe the writing's subject, purpose, theme, or context."
+      placeholder: |
+        What is this writing about?
+        What ideas, emotions, or experiences should it explore?
+    validations:
+      required: true
+
+  - type: input
+    id: labels
+    attributes:
+      label: "🏷️ Labels / Tags"
+      description: "Provide relevant labels or tags, separated by commas."
+      placeholder: "e.g., চিঠি, সময়, স্মৃতি, জীবন"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ## 🔄 Submission Guidelines
+
+        1. Submit this issue with the required writing metadata.
+        2. Prepare the writing as a Markdown document using repository conventions.
+        3. Include the appropriate metadata in the document's YAML frontmatter.
+        4. Open a Pull Request and link this issue.
+        5. Validate the Markdown `category` and `visibility` against this issue.
+        6. Merge the Pull Request after all required checks pass.
+
+        ## 🔍 Metadata Validation
+
+        Only these two frontmatter fields are required for metadata validation:
+
+        - `category`
+        - `visibility`
+
+        Missing or mismatched values must fail validation.
+
+        The `category` field must follow the repository's established category mapping.
+
+        Other frontmatter fields, including `type`, are outside the scope of this check.
+
+        ## 🔒 Privacy Reminder
+
+        Issue forms and Pull Requests may be publicly visible.
+        Do not include sensitive personal information in a public issue.
+
+        Setting `visibility: private` in Markdown does not make a file private.
+        Ensure the repository and publishing configuration enforce the intended access restrictions.
