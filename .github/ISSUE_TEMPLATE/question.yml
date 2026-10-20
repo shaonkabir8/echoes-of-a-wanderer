@@ -1,0 +1,138 @@
+name: "❓ General Question / Support"
+description: "Ask questions about the project, its usage, configuration, or development."
+title: "❓ question: "
+labels:
+  - question
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ❓ General Question / Support
+
+        Use this template to ask project-related questions that do not fit existing issue categories.
+
+        **Before submitting:**
+        - 🔎 Search existing issues and discussions for similar questions.
+        - 📚 Review the project's README and relevant documentation.
+        - 🎯 Clearly explain what you are trying to understand or accomplish.
+
+        > 💡 Report reproducible software defects using the Bug Report template. Request new functionality using Feature Request. For security vulnerabilities, follow the project's private security reporting instructions.
+
+  - type: dropdown
+    id: question_category
+    attributes:
+      label: "📂 Question Category"
+      description: "Which area does your question relate to?"
+      options:
+        - "Getting started or installation"
+        - "Configuration or setup"
+        - "Usage or functionality"
+        - "Development or contribution"
+        - "Architecture or technical design"
+        - "Build, testing, or deployment"
+        - "Troubleshooting"
+        - "Documentation clarification"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "💬 Your Question"
+      description: "Clearly describe what you would like to know."
+      placeholder: |
+        What would you like to understand?
+        What are you trying to accomplish?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "📝 Context and Background"
+      description: "Provide the relevant context needed to understand your question."
+      placeholder: |
+        What are you working on?
+        What have you tried so far?
+        Which component, feature, or workflow is involved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempted_solutions
+    attributes:
+      label: "🔍 What Have You Tried?"
+      description: "Describe any approaches you have already attempted, if applicable."
+      placeholder: |
+        - Steps attempted:
+        - Results observed:
+        - Where you got stuck:
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: error_details
+    attributes:
+      label: "⚠️ Error Messages or Unexpected Results"
+      description: "Include relevant error messages or observed results, if applicable. Remove secrets and sensitive information."
+      placeholder: |
+        Expected result:
+        Actual result:
+        Relevant error message:
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "🖥️ Environment Details"
+      description: "Provide environment details only when relevant to your question."
+      placeholder: |
+        - Operating system:
+        - Application or package version:
+        - Runtime or framework version:
+        - Relevant tools or dependencies:
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "🔗 Relevant References"
+      description: "Add relevant documentation links, related issues, or other useful references."
+      placeholder: |
+        Documentation:
+        Related issues or pull requests:
+        Relevant source files:
+      render: markdown
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✅ Submission Checklist"
+      description: "Confirm the following before submitting."
+      options:
+        - label: "I have searched existing issues and discussions for similar questions."
+          required: true
+        - label: "I have reviewed relevant documentation where applicable."
+          required: true
+        - label: "I have provided enough context to understand my question."
+          required: true
+        - label: "I have removed passwords, access tokens, secrets, and other sensitive information."
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        🙌 **Thank you for reaching out!**
+
+        Clear questions and relevant context help maintainers and community members provide accurate, useful answers.
