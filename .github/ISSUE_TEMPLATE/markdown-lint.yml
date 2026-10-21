@@ -1,0 +1,34 @@
+name: Markdown Lint
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - ".github/workflows/markdown-lint.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - ".github/workflows/markdown-lint.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    name: Validate README Markdown
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Markdown lint
+        run: npx --yes markdownlint-cli2 README.md
