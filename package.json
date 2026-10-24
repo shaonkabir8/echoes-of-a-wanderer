@@ -1,0 +1,19 @@
+{
+  "name": "echoes-of-a-wanderer",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-content.mjs",
+    "build": "node scripts/build-site.mjs",
+    "audit:output": "node scripts/audit-output.mjs",
+    "test": "node --test",
+    "verify": "npm run validate && npm test && npm run build && npm run audit:output"
+  },
+  "dependencies": {
+    "markdown-it": "15.0.3",
+    "yaml": "2.9.1"
+  }
+}

@@ -1,0 +1,317 @@
+:root {
+  color-scheme: dark;
+  --writing-bg: #0f0c29;
+  --writing-panel: rgba(255, 255, 255, 0.045);
+  --writing-panel-hover: rgba(255, 255, 255, 0.075);
+  --writing-ink: #eae6ff;
+  --writing-muted: #a49dca;
+  --writing-violet: #b8a6ff;
+  --writing-border: rgba(184, 166, 255, 0.16);
+  --writing-border-hover: rgba(184, 166, 255, 0.42);
+}
+
+.published-nav {
+  position: relative;
+  z-index: 2;
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto 22px;
+  text-align: right;
+}
+
+.published-nav a,
+.writing-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--writing-border);
+  border-radius: 999px;
+  color: var(--writing-ink);
+  background: var(--writing-panel);
+  text-decoration: none;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.published-nav a:hover,
+.writing-nav a:hover {
+  background: var(--writing-panel-hover);
+  border-color: var(--writing-border-hover);
+  transform: translateY(-1px);
+}
+
+.writing-body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--writing-ink);
+  background:
+    radial-gradient(ellipse at 12% 0%, rgba(109, 90, 207, 0.25), transparent 48%),
+    linear-gradient(145deg, #0f0c29, #191533 55%, #24243e);
+  font-family: "Hind Siliguri", "Tiro Bangla", system-ui, sans-serif;
+  font-size: 1.04rem;
+  line-height: 1.9;
+  letter-spacing: 0.005em;
+}
+
+.writing-shell {
+  width: min(900px, calc(100% - 32px));
+  margin-inline: auto;
+  padding: clamp(24px, 5vw, 56px) 0 36px;
+}
+
+.writing-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: clamp(32px, 6vw, 60px);
+  color: var(--writing-muted);
+  font-size: 0.95rem;
+}
+
+.writing-header {
+  margin-bottom: 32px;
+}
+
+.writing-eyebrow {
+  margin: 0 0 10px;
+  color: var(--writing-violet);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.writing-header h1,
+.writing-article h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "Tiro Bangla", "Hind Siliguri", serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.writing-header > p:last-child,
+.writing-article__header > p:last-child {
+  color: var(--writing-muted);
+}
+
+.writing-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.writing-list__item {
+  min-width: 0;
+}
+
+.writing-card,
+.writing-article {
+  display: block;
+  padding: clamp(20px, 4vw, 30px);
+  border: 1px solid var(--writing-border);
+  border-radius: 20px;
+  background: var(--writing-panel);
+  color: inherit;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.writing-card {
+  min-height: 220px;
+  text-decoration: none;
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.writing-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--writing-border-hover);
+  background: var(--writing-panel-hover);
+}
+
+.writing-card__eyebrow,
+.writing-card__title,
+.writing-card__description,
+.writing-card__action {
+  display: block;
+}
+
+.writing-card__eyebrow {
+  color: var(--writing-violet);
+  font-size: 0.86rem;
+}
+
+.writing-card__title {
+  margin-top: 8px;
+  color: #fff;
+  font-family: "Tiro Bangla", "Hind Siliguri", serif;
+  font-size: 1.4rem;
+}
+
+.writing-card__description {
+  margin-top: 8px;
+  color: var(--writing-muted);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.writing-card__action {
+  margin-top: 14px;
+  color: var(--writing-violet);
+}
+
+.writing-date {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.writing-article {
+  padding: clamp(22px, 5vw, 48px);
+}
+
+.writing-article__header {
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--writing-border);
+}
+
+.writing-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  color: var(--writing-muted);
+  font-size: 0.94rem;
+}
+
+.writing-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.writing-tags li {
+  padding: 3px 10px;
+  border: 1px solid var(--writing-border);
+  border-radius: 999px;
+  color: var(--writing-muted);
+  font-size: 0.82rem;
+}
+
+.writing-content {
+  padding-top: 20px;
+  overflow-wrap: anywhere;
+}
+
+.writing-content h2,
+.writing-content h3,
+.writing-content h4 {
+  margin: 1.8em 0 0.55em;
+  color: #fff;
+  line-height: 1.55;
+}
+
+.writing-content p,
+.writing-content ul,
+.writing-content ol,
+.writing-content blockquote {
+  margin: 0 0 1.1em;
+}
+
+.writing-content a,
+.writing-article a {
+  color: var(--writing-violet);
+  text-underline-offset: 0.2em;
+}
+
+.writing-content blockquote {
+  padding: 4px 0 4px 18px;
+  border-left: 2px solid var(--writing-violet);
+  color: var(--writing-muted);
+}
+
+.writing-content pre {
+  overflow-x: auto;
+  padding: 16px;
+  border: 1px solid var(--writing-border);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.writing-content code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.writing-content :not(pre) > code {
+  padding: 0.12em 0.35em;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.writing-empty {
+  padding: 26px;
+  border: 1px solid var(--writing-border);
+  border-radius: 16px;
+  color: var(--writing-muted);
+  background: var(--writing-panel);
+}
+
+.writing-footer {
+  padding: 28px 0 0;
+  color: var(--writing-muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.writing-image-alt {
+  color: var(--writing-muted);
+  font-style: italic;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 520px) {
+  .published-nav {
+    text-align: left;
+  }
+
+  .writing-nav {
+    margin-bottom: 30px;
+  }
+
+  .writing-card {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .published-nav a,
+  .writing-nav a,
+  .writing-card {
+    transition: none;
+  }
+}
