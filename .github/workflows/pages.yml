@@ -15,59 +15,85 @@ concurrency:
 
 jobs:
   content-checks:
-    name: content-checks
+    name: Content Validation, Privacy Audit & Build
     runs-on: ubuntu-latest
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
+      # 1. Checkout source code
       - name: Checkout source
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
+      # 2. Configure project Node.js runtime
       - name: Set up Node.js
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 22
           cache: npm
 
+      # 3. Install locked dependencies
       - name: Install locked dependencies
         run: npm ci --ignore-scripts
 
+      # 4. Validate Markdown metadata
       - name: Validate Markdown metadata
         run: npm run validate
 
+      # 5. Test publishing and privacy behavior
       - name: Run publishing and privacy tests
         run: npm test
 
+      # 6. Build the website exactly once in this workflow
       - name: Build Cloudflare Pages output
         run: npm run build
 
+      # 7. Audit the complete generated public output
       - name: Audit complete public output
         run: npm run audit:output
 
+      # 8. Preserve the exact audited build for deployment
+      - name: Upload audited Pages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-dist-${{ github.sha }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7
+
   deploy-pages:
-    name: deploy-pages
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.CLOUDFLARE_PAGES_PROJECT != '' }}
+    name: Deploy Verified Artifact
+    if: >-
+      ${{
+        github.event_name == 'push' &&
+        github.ref == 'refs/heads/main' &&
+        vars.CLOUDFLARE_PAGES_PROJECT != ''
+      }}
+
     needs: content-checks
+
     runs-on: ubuntu-latest
+
     environment: production
+
     permissions:
       contents: read
       deployments: write
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
-      - name: Checkout verified source
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+      # 1. Download the artifact produced by the successful CI job
+      - name: Download audited Pages artifact
+        uses: actions/download-artifact@v4
         with:
-          node-version: 22
-          cache: npm
+          name: pages-dist-${{ github.sha }}
+          path: dist/
 
-      - name: Install locked dependencies
-        run: npm ci --ignore-scripts
-
-      - name: Build verified Pages output
-        run: npm run build
-
-      - name: Deploy to the configured Cloudflare Pages project
+      # 2. Deploy the same artifact that passed the output audit
+      - name: Deploy verified artifact to Cloudflare Pages
         uses: cloudflare/wrangler-action@2ef9f398b9175c68f953e40d679493850d640a85 # v4.1.3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
