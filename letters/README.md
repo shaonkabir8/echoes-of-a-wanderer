@@ -1,13 +1,21 @@
-📚 Stories
+# চিঠিপত্র ✉️
 
-A collection of fictional narratives, mysterious encounters, imagined worlds, and stories that emerge from the shadows of memory and imagination.
+কিছু কথা কাউকে বলা হয় না 💭। জমিয়ে রাখা হয় মনের ভেতর 🫀। তারপর একদিন হঠাৎ মনে হয়, কথাগুলো লিখে রাখা দরকার 🖋️।
 
-Some stories begin with a question.
-Some lead into the unknown.
-Others remain unfinished, waiting for the right moment to continue.
+এই  📁 `letters` ফোল্ডারটা তেমন কিছু কথার ঠিকানা 🏠। এখানে আছে চিঠি, স্মৃতি, অনুভূতি আর জীবনের পথে হঠাৎ থেমে যাওয়া কিছু মুহূর্ত ⏸️।
 
-Not every mystery needs an immediate answer.
+সব লেখা সবার জন্য নয় 🚫।
+কোনো লেখা প্রকাশিত হবে 🌐,
+কোনোটা থেকে যাবে একান্ত নিজের 🔒—সেই সিদ্ধান্ত জানিয়ে দেওয়া হবে লেখার `visibility` তে।
 
----
+**public 🌐** — লেখা সবার জন্য উন্মুক্ত। (এই উন্মুক্ত লেখালেখির ঠিকানা হবেঃ dairy.shaonkabir98.workers.dev) 
 
-Every story leaves an echo.
+**private 🔒** — লেখা ব্যক্তিগত থাকবে। ( এই লেখাগুলো কেবলমাত্র এই রিপোজিটরির মধ্যেই সীমাবদ্ধ)
+
+প্রতিটি লেখা Markdown ফাইলে 📝 লিখতে হবে এবং শুরুতে প্রয়োজনীয় YAML Front Matter ঠিক রাখতে হবে। প্রতিটি লেখা প্রকাশের আগে যাচাই করে নিতে হবে ✅, যেন ব্যক্তিগত কোনো কথা ভুল করে প্রকাশিত না হয়ে যায় 🤫। 
+
+ব্যস, আর কিছু নয় 🙌।
+
+কিছু কথা লেখা থাকুক ✍️। সময় হলে কেউ পড়বে 📖, নইলে মহাকাল তো আছেই 🌌⏳।
+
+— এক মহাজাগতিক মুসাফির 🚀🌌
